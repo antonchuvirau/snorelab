@@ -3,10 +3,17 @@
 // -----------------------------------------------------------------------------
 
 // Base
-$font: '';
-$base-font-size: 16px;
+$font: 'Proxima Nova', 'Arial', sans-serif;
+$base-font-size: 18px;
 $base-path: '../';
 
 // Colors
 $white: #fff;
-$black: #222;
+$black: #000;
+$gray-100: #E9E9E9;
+$blue-900: #17A2FF;
+$background: #020F1E;
+
+// Font fades
+$font-light: #8FAEEA;
+$font-blue: #1D66A7;
