@@ -1,3 +1,109 @@
 @media screen and (max-width: 1220px) {
   
 }
+
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 767px) {
+  .home-main {
+    padding-bottom: 250px;
+    background: image('m-main-starry-sky.png') no-repeat 50%;
+  }
+
+  .main {
+    &-decorative {
+      &__phones {
+        position: relative;
+        z-index: 1;
+        top: 35px;
+        right: 0;
+      }
+      &__blur {
+        &-star {
+          top: 116px;
+          right: 50px;
+          & svg {
+            filter: blur(100px);
+            width: 321px;
+            height: 329px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header {
+    &-logo {
+      &__link {
+        & img {
+          width: 108px;
+          height: 30px;
+        }
+      }
+    }
+  }
+
+  .home-main {
+    padding-bottom: 0;
+    &__sl {
+      &-logo {
+        margin-top: 34px;
+        & img {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+    &__title {
+      margin-top: 14px;
+    }
+    &__note {
+      font-size: 1.6rem;
+      line-height: 1.25;
+    }
+    &__download {
+      margin-top: 23px;
+    }
+  }
+
+  .main {
+    &-decorative {
+      &__blur {
+        &-star {
+          top: 100px;
+          right: -30px;
+          & svg {
+            width: 230px;
+            height: 230px;
+            filter: blur(80px);
+          }
+        }
+      }
+    }
+  }
+
+  .download {
+    &-block {
+      justify-content: space-between;
+      &__link {
+        &[data-client="Google Play"],
+        &[data-client="App Store"] {
+          background-size: 106px;
+          height: 44px;
+          margin: 0;
+          width: 50%;
+        }
+        &[data-client="Google Play"] {
+          margin-right: 4px;
+        }
+        &[data-client="App Store"] {
+          margin-left: 4px;
+        }
+      }
+    }
+  }
+}

@@ -1,7 +1,8 @@
 .header {
 	position: absolute;
-	height: 100px;
+	min-height: 100px;
 	width: 100%;
+	z-index: 1;
 	@include flex(row, center);
 	&-navigation {
 		margin-top: 34px;
@@ -15,5 +16,11 @@
 	&-logo {
 		height: 100%;
 		@include flex(row, center);	
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.header {
+		min-height: 70px;
 	}
 }

@@ -3514,10 +3514,15 @@ a {
 .o-hidden {
   overflow: hidden; }
 
+@media screen and (max-width: 576px) {
+  .container {
+    padding: 0 16px; } }
+
 .header {
   position: absolute;
-  height: 100px;
+  min-height: 100px;
   width: 100%;
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3571,6 +3576,10 @@ a {
     -ms-flex-wrap: no-wrap;
         flex-wrap: no-wrap; }
 
+@media screen and (max-width: 576px) {
+  .header {
+    min-height: 70px; } }
+
 .main-decorative__wrapper {
   position: relative; }
 
@@ -3611,6 +3620,16 @@ a {
     line-height: 1.11;
     letter-spacing: -.02em; }
 
+@media screen and (max-width: 576px) {
+  .title_size-l {
+    font-size: 4rem;
+    line-height: 1;
+    letter-spacing: -.02em; }
+  .title_size-m {
+    font-size: 3rem;
+    line-height: 1.07;
+    letter-spacing: 0; } }
+
 .download-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3640,10 +3659,26 @@ a {
       width: 192px;
       height: 60px; }
 
-.m-options__menu-btn {
-  width: 30px;
-  height: 30px;
-  background: url("../img/icons/icon-menu-open.svg") no-repeat right 50%/30px auto; }
+.m-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap; }
+  .m-options__menu-btn {
+    width: 30px;
+    height: 30px;
+    background: url("../img/icons/icon-menu-open.svg") no-repeat right 50%/30px auto; }
 
 .advantages {
   padding-top: 121px; }
@@ -3667,6 +3702,65 @@ a {
     font-size: 2.4rem;
     line-height: 1.25;
     font-weight: 400;
+    margin: 0;
     margin-top: 26px; }
   .home-main__download {
     margin-top: 52px; }
+
+@media screen and (max-width: 767px) {
+  .home-main {
+    padding-bottom: 250px;
+    background: url("../img/m-main-starry-sky.png") no-repeat 50%; }
+  .main-decorative__phones {
+    position: relative;
+    z-index: 1;
+    top: 35px;
+    right: 0; }
+  .main-decorative__blur-star {
+    top: 116px;
+    right: 50px; }
+    .main-decorative__blur-star svg {
+      -webkit-filter: blur(100px);
+              filter: blur(100px);
+      width: 321px;
+      height: 329px; } }
+
+@media screen and (max-width: 576px) {
+  .header-logo__link img {
+    width: 108px;
+    height: 30px; }
+  .home-main {
+    padding-bottom: 0; }
+    .home-main__sl-logo {
+      margin-top: 34px; }
+      .home-main__sl-logo img {
+        width: 50px;
+        height: 50px; }
+    .home-main__title {
+      margin-top: 14px; }
+    .home-main__note {
+      font-size: 1.6rem;
+      line-height: 1.25; }
+    .home-main__download {
+      margin-top: 23px; }
+  .main-decorative__blur-star {
+    top: 100px;
+    right: -30px; }
+    .main-decorative__blur-star svg {
+      width: 230px;
+      height: 230px;
+      -webkit-filter: blur(80px);
+              filter: blur(80px); }
+  .download-block {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .download-block__link[data-client="Google Play"], .download-block__link[data-client="App Store"] {
+      background-size: 106px;
+      height: 44px;
+      margin: 0;
+      width: 50%; }
+    .download-block__link[data-client="Google Play"] {
+      margin-right: 4px; }
+    .download-block__link[data-client="App Store"] {
+      margin-left: 4px; } }

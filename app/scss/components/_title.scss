@@ -20,3 +20,20 @@
     }
   }
 }
+
+@media screen and (max-width: 576px) {
+  .title {
+    &_size {
+      &-l {
+        font-size: 4rem;
+        line-height: 1;
+        letter-spacing: -.02em;
+      }
+      &-m {
+        font-size: 3rem;
+        line-height: 1.07;
+        letter-spacing: 0;
+      }
+    }
+  }
+}

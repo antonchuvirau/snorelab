@@ -11,6 +11,7 @@
   }
   &__note {
     @include full_font(2.4rem, 1.25);
+    margin: 0;
     margin-top: 26px;
   }
   &__download {

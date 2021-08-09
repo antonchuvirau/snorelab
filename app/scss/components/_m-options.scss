@@ -1,4 +1,5 @@
 .m-options {
+  @include flex(row, center, flex-end);
   &__menu {
     &-btn {
       width: 30px;
