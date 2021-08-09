@@ -35,6 +35,7 @@ body {
     font-size: 1.8rem;
     height: 100%;
     background: $background;
+    line-height: 1.39;
 }
 button {
     @include font();

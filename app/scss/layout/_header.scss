@@ -1,0 +1,19 @@
+.header {
+	position: absolute;
+	height: 100px;
+	width: 100%;
+	@include flex(row, center);
+	&-navigation {
+		margin-top: 34px;
+		&__list {
+			@include flex(row, center, space-between);
+		}
+		&__item[active] {
+			color: rgba($white, .3);
+		}
+	}
+	&-logo {
+		height: 100%;
+		@include flex(row, center);	
+	}
+}
