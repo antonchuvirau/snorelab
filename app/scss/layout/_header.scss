@@ -8,7 +8,7 @@
 		&__list {
 			@include flex(row, center, space-between);
 		}
-		&__item[active] {
+		&__item[active] a {
 			color: rgba($white, .3);
 		}
 	}

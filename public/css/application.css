@@ -3497,7 +3497,8 @@ ul, ol {
   padding: 0; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: inherit; }
 
 .underline-link {
   position: relative; }
@@ -3550,7 +3551,7 @@ a {
               align-items: center;
       -ms-flex-wrap: no-wrap;
           flex-wrap: no-wrap; }
-    .header-navigation__item[active] {
+    .header-navigation__item[active] a {
       color: rgba(255, 255, 255, 0.3); }
   .header-logo {
     height: 100%;
@@ -3638,6 +3639,20 @@ a {
       background: #fff url("../img/icons/app-store.svg") no-repeat 50%;
       width: 192px;
       height: 60px; }
+
+.m-options__menu-btn {
+  width: 30px;
+  height: 30px;
+  background: url("../img/icons/icon-menu-open.svg") no-repeat right 50%/30px auto; }
+
+.advantages {
+  padding-top: 121px; }
+  .advantages-note {
+    max-width: 640px; }
+    .advantages-note__text {
+      color: rgba(255, 255, 255, 0.7);
+      margin: 0;
+      margin-top: 31px; }
 
 .home-main {
   position: relative;

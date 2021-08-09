@@ -105,7 +105,9 @@ $utilities: map-get-multiple(
 @import
   'components/button',
   'components/title',
-  'components/download';
+  'components/download',
+  'components/m-options',
+  'components/advantages';
 
 // 6. Page-specific styles
 @import

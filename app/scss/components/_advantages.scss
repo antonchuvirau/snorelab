@@ -1,0 +1,11 @@
+.advantages {
+  padding-top: 121px;
+  &-note {
+    max-width: 640px;
+    &__text {
+      color: rgba($white, .7);
+      margin: 0;
+      margin-top: 31px;
+    }
+  }
+}

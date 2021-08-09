@@ -1,0 +1,9 @@
+.m-options {
+  &__menu {
+    &-btn {
+      width: 30px;
+      height: 30px;
+      background: icon('icon-menu-open.svg') no-repeat right 50% / 30px auto;
+    }
+  }
+}
