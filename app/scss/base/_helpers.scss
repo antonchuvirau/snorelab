@@ -24,8 +24,6 @@ a {
   }
 }
 
-.fade-title {
-  background: linear-gradient(268.94deg, $font-light 29.66%, $font-blue 104.91%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.o-hidden {
+  overflow: hidden;
 }

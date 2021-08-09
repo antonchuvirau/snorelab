@@ -14,8 +14,7 @@
 	font-family: $font;
 }
 
-@mixin full_font($font: 'Arial', $fz: 1.8rem, $lh: 1.39, $fw: 400) {
-  font-family: $font;
+@mixin full_font($fz: 1.8rem, $lh: 1.39, $fw: 400) {
   font-size: $fz;
   line-height: $lh;
   font-weight: $fw;

@@ -98,11 +98,14 @@ $utilities: map-get-multiple(
 // 4. Layout-related sections
 @import
   'layout/header',
+  'layout/main',
   'layout/footer';
 
 // 5. Components
 @import
-  'components/button';
+  'components/button',
+  'components/title',
+  'components/download';
 
 // 6. Page-specific styles
 @import
@@ -110,4 +113,5 @@ $utilities: map-get-multiple(
 
 // 7. Themes
 @import
-  'themes/default';
+  'themes/default',
+  'themes/media';

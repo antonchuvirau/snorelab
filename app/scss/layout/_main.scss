@@ -1,0 +1,23 @@
+.main {
+  &-decorative {
+    &__wrapper {
+      position: relative;
+    }
+    &__blur {
+      &-star {
+        position: absolute;
+        top: -64px;
+        right: -280px;
+        & svg {
+          transform: rotate(-18.74deg);
+          filter: blur(200px);
+        }
+      }
+    }
+    &__phones {
+      position: absolute;
+      top: -54px;
+      right: -96px;
+    }
+  }
+}

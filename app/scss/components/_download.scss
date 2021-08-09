@@ -1,0 +1,21 @@
+.download {
+  &-block {
+    @include flex();
+    &__link {
+      border-radius: 10px;
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+      &[data-client="Google Play"] {
+        background: $white icon('google-play.svg') no-repeat 50%;
+        width: 195px;
+        height: 60px;
+      }
+      &[data-client="App Store"] {
+        background: $white icon('app-store.svg') no-repeat 50%;
+        width: 192px;
+        height: 60px;
+      }
+    }
+  }
+}

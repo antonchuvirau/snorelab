@@ -1,0 +1,22 @@
+.fade-title {
+  background: linear-gradient(268.94deg, $font-light 29.66%, $font-blue 104.91%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.title {
+  font-weight: 700;
+  margin: 0;
+  &_size {
+    &-l {
+      font-size: 7.5rem;
+      line-height: .93;
+      letter-spacing: -.03em;
+    }
+    &-m {
+      font-size: 4.5rem;
+      line-height: 1.11;
+      letter-spacing: -.02em;
+    }
+  }
+}

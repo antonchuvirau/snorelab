@@ -3510,11 +3510,8 @@ a {
     height: 1px;
     background: #fff; }
 
-.fade-title {
-  background: -o-linear-gradient(181.06deg, #8FAEEA 29.66%, #1D66A7 104.91%);
-  background: linear-gradient(268.94deg, #8FAEEA 29.66%, #1D66A7 104.91%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
+.o-hidden {
+  overflow: hidden; }
 
 .header {
   position: absolute;
@@ -3573,5 +3570,88 @@ a {
     -ms-flex-wrap: no-wrap;
         flex-wrap: no-wrap; }
 
+.main-decorative__wrapper {
+  position: relative; }
+
+.main-decorative__blur-star {
+  position: absolute;
+  top: -64px;
+  right: -280px; }
+  .main-decorative__blur-star svg {
+    -webkit-transform: rotate(-18.74deg);
+        -ms-transform: rotate(-18.74deg);
+            transform: rotate(-18.74deg);
+    -webkit-filter: blur(200px);
+            filter: blur(200px); }
+
+.main-decorative__phones {
+  position: absolute;
+  top: -54px;
+  right: -96px; }
+
+.btn {
+  border-radius: 10px; }
+
+.fade-title {
+  background: -o-linear-gradient(181.06deg, #8FAEEA 29.66%, #1D66A7 104.91%);
+  background: linear-gradient(268.94deg, #8FAEEA 29.66%, #1D66A7 104.91%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.title {
+  font-weight: 700;
+  margin: 0; }
+  .title_size-l {
+    font-size: 7.5rem;
+    line-height: .93;
+    letter-spacing: -.03em; }
+  .title_size-m {
+    font-size: 4.5rem;
+    line-height: 1.11;
+    letter-spacing: -.02em; }
+
+.download-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap; }
+  .download-block__link {
+    border-radius: 10px; }
+    .download-block__link:not(:last-child) {
+      margin-right: 10px; }
+    .download-block__link[data-client="Google Play"] {
+      background: #fff url("../img/icons/google-play.svg") no-repeat 50%;
+      width: 195px;
+      height: 60px; }
+    .download-block__link[data-client="App Store"] {
+      background: #fff url("../img/icons/app-store.svg") no-repeat 50%;
+      width: 192px;
+      height: 60px; }
+
 .home-main {
-  background: url("../img/main-starry-sky.png"); }
+  position: relative;
+  background: url("../img/main-starry-sky.png") no-repeat;
+  padding: 100px 0;
+  padding-bottom: 400px; }
+  .home-main__sl-logo {
+    margin-top: 120px; }
+  .home-main__title {
+    margin-top: 32px; }
+  .home-main__note {
+    font-size: 2.4rem;
+    line-height: 1.25;
+    font-weight: 400;
+    margin-top: 26px; }
+  .home-main__download {
+    margin-top: 52px; }
