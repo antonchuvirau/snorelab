@@ -124,12 +124,14 @@
       justify-content: space-between;
       &__link {
         border-radius: 8px;
-        &[data-client="Google Play"],
-        &[data-client="App Store"] {
-          background-size: 106px;
-          height: 44px;
-          margin: 0;
-          width: 50%;
+        width: 50%;
+        margin: 0;
+        padding: .9rem 2.7rem;
+        display: grid;
+        place-items: center;
+        & img {
+          width: 106px;
+          height: 25px;
         }
         &[data-client="Google Play"] {
           margin-right: 4px;

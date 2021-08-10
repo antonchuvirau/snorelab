@@ -1,0 +1,10 @@
+.partner-app {
+  padding-top: 81px;
+  padding-bottom: 109px;
+  &__title {
+    margin-bottom: 65px;
+  }
+  &__app {
+    @include flex();
+  }
+}

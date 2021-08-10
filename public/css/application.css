@@ -3658,17 +3658,11 @@ a {
   -ms-flex-wrap: no-wrap;
       flex-wrap: no-wrap; }
   .download-block__link {
-    border-radius: 10px; }
+    border-radius: 10px;
+    background: #FFF;
+    padding: 1.3rem 2.5rem; }
     .download-block__link:not(:last-child) {
       margin-right: 10px; }
-    .download-block__link[data-client="Google Play"] {
-      background: #FFF url("../img/icons/google-play.svg") no-repeat 50%;
-      width: 195px;
-      height: 60px; }
-    .download-block__link[data-client="App Store"] {
-      background: #FFF url("../img/icons/app-store.svg") no-repeat 50%;
-      width: 192px;
-      height: 60px; }
 
 .m-options {
   display: -webkit-box;
@@ -3910,6 +3904,28 @@ a {
       .reviews__pagination-bullet:not(:last-child) {
         margin-right: 8px; }
 
+.partner-app {
+  padding-top: 81px;
+  padding-bottom: 109px; }
+  .partner-app__title {
+    margin-bottom: 65px; }
+  .partner-app__app {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: no-wrap;
+        flex-wrap: no-wrap; }
+
 .home-main {
   position: relative;
   padding: 100px 0;
@@ -3999,12 +4015,15 @@ a {
         -ms-flex-pack: justify;
             justify-content: space-between; }
     .download-block__link {
-      border-radius: 8px; }
-      .download-block__link[data-client="Google Play"], .download-block__link[data-client="App Store"] {
-        background-size: 106px;
-        height: 44px;
-        margin: 0;
-        width: 50%; }
+      border-radius: 8px;
+      width: 50%;
+      margin: 0;
+      padding: .9rem 2.7rem;
+      display: grid;
+      place-items: center; }
+      .download-block__link img {
+        width: 106px;
+        height: 25px; }
       .download-block__link[data-client="Google Play"] {
         margin-right: 4px; }
       .download-block__link[data-client="App Store"] {
