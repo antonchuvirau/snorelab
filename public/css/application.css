@@ -3585,19 +3585,20 @@ a {
 
 .main-decorative__blur-star {
   position: absolute;
-  top: -64px;
-  right: -280px; }
+  top: -50px;
+  right: -220px; }
   .main-decorative__blur-star svg {
     -webkit-transform: rotate(-18.74deg);
         -ms-transform: rotate(-18.74deg);
             transform: rotate(-18.74deg);
-    -webkit-filter: blur(200px);
-            filter: blur(200px); }
+    -webkit-filter: blur(300px);
+            filter: blur(300px); }
 
 .main-decorative__phones {
   position: absolute;
   top: -54px;
-  right: -96px; }
+  right: -96px;
+  min-height: 470px; }
 
 .btn {
   border-radius: 10px; }
@@ -3620,7 +3621,7 @@ a {
     line-height: 1.11;
     letter-spacing: -.02em; }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 767px) {
   .title_size-l {
     font-size: 4rem;
     line-height: 1;
@@ -3676,6 +3677,9 @@ a {
   -ms-flex-wrap: no-wrap;
       flex-wrap: no-wrap; }
   .m-options__menu-btn {
+    position: fixed;
+    top: 18px;
+    right: 32px;
     width: 30px;
     height: 30px;
     background: url("../img/icons/icon-menu-open.svg") no-repeat right 50%/30px auto; }
@@ -3707,30 +3711,33 @@ a {
   .home-main__download {
     margin-top: 52px; }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1220px) {
   .home-main {
-    padding-bottom: 250px;
-    background: url("../img/m-main-starry-sky.png") no-repeat 50%; }
+    padding-bottom: 250px; }
+    .home-main__title {
+      font-size: 4.5rem;
+      line-height: 1; } }
+
+@media screen and (max-width: 992px) {
+  .home-main {
+    padding-bottom: 60px; }
   .main-decorative__phones {
     position: relative;
     z-index: 1;
-    top: 35px;
-    right: 0; }
+    top: 30px;
+    right: -10px; }
   .main-decorative__blur-star {
     top: 116px;
-    right: 50px; }
+    right: 20px; }
     .main-decorative__blur-star svg {
       -webkit-filter: blur(100px);
               filter: blur(100px);
-      width: 321px;
-      height: 329px; } }
+      width: 521px;
+      height: 529px; } }
 
-@media screen and (max-width: 576px) {
-  .header-logo__link img {
-    width: 108px;
-    height: 30px; }
+@media screen and (max-width: 767px) {
   .home-main {
-    padding-bottom: 0; }
+    background: url("../img/m-main-starry-sky.png") no-repeat 50%; }
     .home-main__sl-logo {
       margin-top: 34px; }
       .home-main__sl-logo img {
@@ -3738,29 +3745,52 @@ a {
         height: 50px; }
     .home-main__title {
       margin-top: 14px; }
+    .home-main__download {
+      margin-top: 23px; }
     .home-main__note {
       font-size: 1.6rem;
       line-height: 1.25; }
-    .home-main__download {
-      margin-top: 23px; }
   .main-decorative__blur-star {
-    top: 100px;
-    right: -30px; }
+    top: 116px;
+    right: 50px; }
     .main-decorative__blur-star svg {
-      width: 230px;
-      height: 230px;
-      -webkit-filter: blur(80px);
-              filter: blur(80px); }
+      width: 321px;
+      height: 329px; }
   .download-block {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-    .download-block__link[data-client="Google Play"], .download-block__link[data-client="App Store"] {
-      background-size: 106px;
-      height: 44px;
-      margin: 0;
-      width: 50%; }
-    .download-block__link[data-client="Google Play"] {
-      margin-right: 4px; }
-    .download-block__link[data-client="App Store"] {
-      margin-left: 4px; } }
+    .download-block__link {
+      border-radius: 8px; }
+      .download-block__link[data-client="Google Play"], .download-block__link[data-client="App Store"] {
+        background-size: 106px;
+        height: 44px;
+        margin: 0;
+        width: 50%; }
+      .download-block__link[data-client="Google Play"] {
+        margin-right: 4px; }
+      .download-block__link[data-client="App Store"] {
+        margin-left: 4px; }
+  .advantages {
+    padding-top: 82px; } }
+
+@media screen and (max-width: 576px) {
+  .header-logo__link img {
+    width: 108px;
+    height: 30px; }
+  .home-main {
+    padding-top: 70px;
+    padding-bottom: 0; }
+  .main-decorative__blur-star {
+    top: 180px;
+    right: 50px; }
+    .main-decorative__blur-star svg {
+      width: 230px;
+      height: 230px;
+      -webkit-filter: blur(80px);
+              filter: blur(80px); } }
+
+@media screen and (max-width: 420px) {
+  .main-decorative__blur-star {
+    top: 100px;
+    right: -10px; } }
