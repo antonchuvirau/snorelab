@@ -3756,6 +3756,22 @@ a {
         background: #2DA6DD url("../img/icons/svgrepo/magic-starred-wand.svg") no-repeat 50%; }
       .advantages-list__note[data-header="Doctor Recommended"]::before {
         background: #2DA6DD url("../img/icons/svgrepo/add-to-favourites.svg") no-repeat 50%; }
+      .advantages-list__note[data-header="Work into your daily routine"]::before {
+        background: url("../img/icons/svgrepo/three-oclock.svg") no-repeat 50%, -webkit-gradient(linear, left bottom, left top, color-stop(3%, #01BBE0), color-stop(108.67%, #6ECDE0));
+        background: url("../img/icons/svgrepo/three-oclock.svg") no-repeat 50%, -o-linear-gradient(bottom, #01BBE0 3%, #6ECDE0 108.67%);
+        background: url("../img/icons/svgrepo/three-oclock.svg") no-repeat 50%, linear-gradient(0deg, #01BBE0 3%, #6ECDE0 108.67%); }
+      .advantages-list__note[data-header="Easy-to-follow animations"]::before {
+        background: url("../img/icons/svgrepo/play-movie-button-with-a-triangle-in-a-circle.svg") no-repeat 50%, -webkit-gradient(linear, left bottom, left top, color-stop(3%, #01BBE0), color-stop(108.67%, #6ECDE0));
+        background: url("../img/icons/svgrepo/play-movie-button-with-a-triangle-in-a-circle.svg") no-repeat 50%, -o-linear-gradient(bottom, #01BBE0 3%, #6ECDE0 108.67%);
+        background: url("../img/icons/svgrepo/play-movie-button-with-a-triangle-in-a-circle.svg") no-repeat 50%, linear-gradient(0deg, #01BBE0 3%, #6ECDE0 108.67%); }
+      .advantages-list__note[data-header="Hints and tips"]::before {
+        background: url("../img/icons/svgrepo/tiny-star.svg") no-repeat 50%, -webkit-gradient(linear, left bottom, left top, color-stop(3%, #01BBE0), color-stop(108.67%, #6ECDE0));
+        background: url("../img/icons/svgrepo/tiny-star.svg") no-repeat 50%, -o-linear-gradient(bottom, #01BBE0 3%, #6ECDE0 108.67%);
+        background: url("../img/icons/svgrepo/tiny-star.svg") no-repeat 50%, linear-gradient(0deg, #01BBE0 3%, #6ECDE0 108.67%); }
+      .advantages-list__note[data-header="Proven snoring-reduction technique"]::before {
+        background: url("../img/icons/svgrepo/atomic-science.svg") no-repeat 50%, -webkit-gradient(linear, left bottom, left top, color-stop(3%, #01BBE0), color-stop(108.67%, #6ECDE0));
+        background: url("../img/icons/svgrepo/atomic-science.svg") no-repeat 50%, -o-linear-gradient(bottom, #01BBE0 3%, #6ECDE0 108.67%);
+        background: url("../img/icons/svgrepo/atomic-science.svg") no-repeat 50%, linear-gradient(0deg, #01BBE0 3%, #6ECDE0 108.67%); }
     .advantages-list__item {
       background: rgba(255, 255, 255, 0.05);
       padding: 38px 40px 39px 120px;
@@ -3769,6 +3785,12 @@ a {
       color: rgba(255, 255, 255, 0.7);
       margin: 0;
       margin-top: 4px; }
+  .advantages-sg {
+    margin-top: 87px; }
+    .advantages-sg__item:nth-child(1n) {
+      margin-left: 0; }
+    .advantages-sg__item:nth-child(2n) {
+      margin-left: auto; }
 
 .reviews {
   padding-top: 130px;
@@ -3924,7 +3946,12 @@ a {
         -ms-flex-align: start;
             align-items: flex-start;
     -ms-flex-wrap: no-wrap;
-        flex-wrap: no-wrap; }
+        flex-wrap: no-wrap;
+    margin-bottom: 17px; }
+  .partner-app__note {
+    font-size: 2.4rem;
+    line-height: 1.25;
+    margin: 0; }
 
 .home-main {
   position: relative;

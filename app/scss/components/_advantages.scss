@@ -64,6 +64,18 @@
       &[data-header="Doctor Recommended"]::before {
         background: $icon-bg icon('svgrepo/add-to-favourites.svg') no-repeat 50%;
       }
+      &[data-header="Work into your daily routine"]::before {
+        background: icon('svgrepo/three-oclock.svg') no-repeat 50%, $sg-icon-bg;
+      }
+      &[data-header="Easy-to-follow animations"]::before {
+        background: icon('svgrepo/play-movie-button-with-a-triangle-in-a-circle.svg') no-repeat 50%, $sg-icon-bg;
+      }
+      &[data-header="Hints and tips"]::before {
+        background: icon('svgrepo/tiny-star.svg') no-repeat 50%, $sg-icon-bg;
+      }
+      &[data-header="Proven snoring-reduction technique"]::before {
+        background: icon('svgrepo/atomic-science.svg') no-repeat 50%, $sg-icon-bg;
+      }
     }
     &__item {
       background: rgba($white, .05);
@@ -81,6 +93,17 @@
       color: rgba($white, .7);
       margin: 0;
       margin-top: 4px;
+    }
+  }
+  &-sg {
+    margin-top: 87px;
+    &__item {
+      &:nth-child(1n) {
+        margin-left: 0;
+      }
+      &:nth-child(2n) {
+        margin-left: auto;
+      }
     }
   }
 }
