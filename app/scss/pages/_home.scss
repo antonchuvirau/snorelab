@@ -1,6 +1,5 @@
 .home-main {
   position: relative;
-  background: image('main-starry-sky.png') no-repeat;
   padding: 100px 0;
   padding-bottom: 400px;
   &__sl-logo {
@@ -8,6 +7,7 @@
   }
   &__title {
     margin-top: 32px;
+    min-height: 214px;
   }
   &__note {
     @include full_font(2.4rem, 1.25);

@@ -21,6 +21,11 @@
   }
 }
 
+.card-title {
+  color: $white;
+  @include full_font(2.4rem, 1.25, 700);
+}
+
 @media screen and (max-width: 767px) {
   .title {
     &_size {

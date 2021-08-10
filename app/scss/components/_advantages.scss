@@ -1,11 +1,83 @@
 .advantages {
+  position: relative;
   padding-top: 121px;
+  height: 2000px;
   &-note {
     max-width: 640px;
     &__text {
       color: rgba($white, .7);
       margin: 0;
       margin-top: 31px;
+    }
+  }
+  &-decorative {
+    &__blur-star {
+      position: absolute;
+      top: 820px;
+      right: -410px;
+      & svg {
+        filter: blur(130px);
+        transform: rotate(45deg);
+      }
+    }
+    &__phone {
+      position: relative;
+      width: 1480px;
+      z-index: -1;
+      & img {
+        position: absolute;
+        left: -570px;
+        top: -426px;
+        z-index: 1;
+      }
+    }
+  }
+  &-list {
+    @include flex(column);
+    &__note {
+      max-width: 330px;
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        top: -8px;
+        right: calc(100% + 30px);
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+      }
+      &[data-header="Effective algorithms"]::before {
+        background: $icon-bg icon('svgrepo/speed-meter.svg') no-repeat 50%;
+      }
+      &[data-header="Clear Recordings"]::before {
+        background: $icon-bg icon('svgrepo/record-voice-button.svg') no-repeat 50%;
+      }
+      &[data-header="Easy to Use"]::before {
+        background: $icon-bg icon('svgrepo/hand.svg') no-repeat 50%;
+      }
+      &[data-header="Discover Solutions"]::before {
+        background: $icon-bg icon('svgrepo/hand-holding-up-a-bulb.svg') no-repeat 50%;
+      }
+      &[data-header="Trends Area"]::before {
+        background: $icon-bg icon('svgrepo/magic-starred-wand.svg') no-repeat 50%;
+      }
+      &[data-header="Doctor Recommended"]::before {
+        background: $icon-bg icon('svgrepo/add-to-favourites.svg') no-repeat 50%;
+      }
+    }
+    &__item {
+      background: rgba($white, .05);
+      padding: 38px 40px 39px 120px;
+      margin-bottom: 19px;
+      border-radius: 10px;
+      &:nth-child(2n-1) {
+        margin-left: auto;
+      }
+    }
+    &__text {
+      color: rgba($white, .7);
+      margin: 0;
+      margin-top: 4px;
     }
   }
 }

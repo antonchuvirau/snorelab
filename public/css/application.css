@@ -3600,6 +3600,9 @@ a {
   right: -96px;
   min-height: 470px; }
 
+.main-how-works {
+  background: url("../img/main-starry-sky.png") 50%; }
+
 .btn {
   border-radius: 10px; }
 
@@ -3620,6 +3623,12 @@ a {
     font-size: 4.5rem;
     line-height: 1.11;
     letter-spacing: -.02em; }
+
+.card-title {
+  color: #fff;
+  font-size: 2.4rem;
+  line-height: 1.25;
+  font-weight: 700; }
 
 @media screen and (max-width: 767px) {
   .title_size-l {
@@ -3685,23 +3694,94 @@ a {
     background: url("../img/icons/icon-menu-open.svg") no-repeat right 50%/30px auto; }
 
 .advantages {
-  padding-top: 121px; }
+  position: relative;
+  padding-top: 121px;
+  height: 2000px; }
   .advantages-note {
     max-width: 640px; }
     .advantages-note__text {
       color: rgba(255, 255, 255, 0.7);
       margin: 0;
       margin-top: 31px; }
+  .advantages-decorative__blur-star {
+    position: absolute;
+    top: 820px;
+    right: -410px; }
+    .advantages-decorative__blur-star svg {
+      -webkit-filter: blur(130px);
+              filter: blur(130px);
+      -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+              transform: rotate(45deg); }
+  .advantages-decorative__phone {
+    position: relative;
+    width: 1480px;
+    z-index: -1; }
+    .advantages-decorative__phone img {
+      position: absolute;
+      left: -570px;
+      top: -426px;
+      z-index: 1; }
+  .advantages-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: no-wrap;
+        flex-wrap: no-wrap; }
+    .advantages-list__note {
+      max-width: 330px;
+      position: relative; }
+      .advantages-list__note::before {
+        content: '';
+        position: absolute;
+        top: -8px;
+        right: calc(100% + 30px);
+        width: 50px;
+        height: 50px;
+        border-radius: 10px; }
+      .advantages-list__note[data-header="Effective algorithms"]::before {
+        background: #2DA6DD url("../img/icons/svgrepo/speed-meter.svg") no-repeat 50%; }
+      .advantages-list__note[data-header="Clear Recordings"]::before {
+        background: #2DA6DD url("../img/icons/svgrepo/record-voice-button.svg") no-repeat 50%; }
+      .advantages-list__note[data-header="Easy to Use"]::before {
+        background: #2DA6DD url("../img/icons/svgrepo/hand.svg") no-repeat 50%; }
+      .advantages-list__note[data-header="Discover Solutions"]::before {
+        background: #2DA6DD url("../img/icons/svgrepo/hand-holding-up-a-bulb.svg") no-repeat 50%; }
+      .advantages-list__note[data-header="Trends Area"]::before {
+        background: #2DA6DD url("../img/icons/svgrepo/magic-starred-wand.svg") no-repeat 50%; }
+      .advantages-list__note[data-header="Doctor Recommended"]::before {
+        background: #2DA6DD url("../img/icons/svgrepo/add-to-favourites.svg") no-repeat 50%; }
+    .advantages-list__item {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 38px 40px 39px 120px;
+      margin-bottom: 19px;
+      border-radius: 10px; }
+      .advantages-list__item:nth-child(2n-1) {
+        margin-left: auto; }
+    .advantages-list__text {
+      color: rgba(255, 255, 255, 0.7);
+      margin: 0;
+      margin-top: 4px; }
 
 .home-main {
   position: relative;
-  background: url("../img/main-starry-sky.png") no-repeat;
   padding: 100px 0;
   padding-bottom: 400px; }
   .home-main__sl-logo {
     margin-top: 120px; }
   .home-main__title {
-    margin-top: 32px; }
+    margin-top: 32px;
+    min-height: 214px; }
   .home-main__note {
     font-size: 2.4rem;
     line-height: 1.25;
@@ -3716,7 +3796,8 @@ a {
     padding-bottom: 250px; }
     .home-main__title {
       font-size: 4.5rem;
-      line-height: 1; } }
+      line-height: 1;
+      min-height: auto; } }
 
 @media screen and (max-width: 992px) {
   .home-main {
