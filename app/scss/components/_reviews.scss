@@ -42,7 +42,7 @@
       }
     }
     &__person {
-      @include flex(row, center, flex-start, wrap);
+      @include flex(row, center);
       & img {
         border-radius: 50%;
         margin-right: 15px;

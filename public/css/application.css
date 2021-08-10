@@ -3402,7 +3402,7 @@ strong {
 body {
   font-family: "Proxima Nova", "Arial", sans-serif;
   font-weight: 400;
-  color: #fff;
+  color: #FFF;
   font-size: 1.8rem;
   height: 100%;
   background: #020F1E;
@@ -3510,7 +3510,7 @@ a {
     bottom: 3px;
     width: 100%;
     height: 1px;
-    background: #fff; }
+    background: #FFF; }
 
 .o-hidden {
   overflow: hidden; }
@@ -3626,7 +3626,7 @@ a {
     letter-spacing: -.02em; }
 
 .card-title {
-  color: #fff;
+  color: #FFF;
   font-size: 2.4rem;
   line-height: 1.25;
   font-weight: 700; }
@@ -3662,11 +3662,11 @@ a {
     .download-block__link:not(:last-child) {
       margin-right: 10px; }
     .download-block__link[data-client="Google Play"] {
-      background: #fff url("../img/icons/google-play.svg") no-repeat 50%;
+      background: #FFF url("../img/icons/google-play.svg") no-repeat 50%;
       width: 195px;
       height: 60px; }
     .download-block__link[data-client="App Store"] {
-      background: #fff url("../img/icons/app-store.svg") no-repeat 50%;
+      background: #FFF url("../img/icons/app-store.svg") no-repeat 50%;
       width: 192px;
       height: 60px; }
 
@@ -3873,8 +3873,8 @@ a {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+      -ms-flex-wrap: no-wrap;
+          flex-wrap: no-wrap; }
       .reviews-list__person img {
         border-radius: 50%;
         margin-right: 15px; }
@@ -3906,7 +3906,7 @@ a {
       .reviews__pagination-bullet_active {
         width: 12px;
         height: 12px;
-        background: #fff; }
+        background: #FFF; }
       .reviews__pagination-bullet:not(:last-child) {
         margin-right: 8px; }
 
@@ -4035,11 +4035,20 @@ a {
     .advantages-decorative__phone img {
       left: calc(15% - 340px); }
     .advantages-decorative__blur-star {
-      top: 1330px;
-      right: -240px; }
+      top: 1030px;
+      right: -300px; }
     .advantages-note__text {
       font-size: 1.6rem;
-      line-height: 1.25; } }
+      line-height: 1.25; }
+  .reviews {
+    padding-top: 55px;
+    padding-bottom: 26px; }
+    .reviews__title {
+      margin-bottom: 33px; }
+    .reviews-list__item {
+      min-height: 400px;
+      min-width: 295px;
+      padding: 27px 25px; } }
 
 @media screen and (max-width: 576px) {
   .header-logo__link svg {
@@ -4060,7 +4069,18 @@ a {
     padding-bottom: 42px; }
     .advantages-decorative__phone img {
       left: -210px;
-      top: -50px; } }
+      top: -50px; }
+    .advantages-decorative__blur-star {
+      top: 1330px;
+      right: -240px; }
+  .reviews-list__text {
+    font-size: 1.6rem;
+    line-height: 1.25; }
+  .reviews-list__item-title {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.6rem;
+    line-height: 1.25;
+    font-weight: 400; } }
 
 @media screen and (max-width: 420px) {
   .main-decorative__blur-star {
