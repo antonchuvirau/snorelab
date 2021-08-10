@@ -1,3 +1,74 @@
 .reviews {
-  
+  padding-top: 130px;
+  padding-bottom: 220px;
+  background: image('reviews-starry-sky.png') 50%;
+  &__title {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 79px;
+  }
+  &__content {
+    position: relative;
+    overflow: hidden;
+    @include flex();
+    justify-content: center;
+  }
+  &-list {
+    position: relative;
+    @include flex();
+    &__text {
+      margin: 0;
+      margin-bottom: auto;
+    }
+    &__rate {
+      margin-bottom: 13px;
+    }
+    &__item {
+      padding: 25px 50px;
+      box-sizing: border-box;
+      min-height: 290px;
+      min-width: 587px;
+      background: rgba($white, .05);
+      @include flex(column);
+      &:not(:last-child) {
+        margin-right: 12px;
+      }
+      &-title {
+        font-weight: 600;
+        color: rgba($gray-100, .9);
+        line-height: 1.39;
+      }
+    }
+    &__person {
+      @include flex(row, center, flex-start, wrap);
+      & img {
+        border-radius: 50%;
+        margin-right: 15px;
+      }
+    }
+  }
+  &__pagination {
+    @include flex(row, center);
+    &-wrapper {
+      display: grid;
+      justify-items: center;
+      margin-top: 38px;
+    }
+    &-bullet {
+      width: 8px;
+      height: 8px;
+      background: $gray-500;
+      border-radius: 50%;
+      &_active {
+        width: 12px;
+        height: 12px;
+        background: $white;
+      }
+      &:not(:last-child) {
+        margin-right: 8px;
+      }
+    }
+  }
 }

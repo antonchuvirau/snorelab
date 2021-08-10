@@ -3696,8 +3696,7 @@ a {
 
 .advantages {
   position: relative;
-  padding-top: 121px;
-  padding-bottom: 42px; }
+  padding-top: 121px; }
   .advantages-note {
     max-width: 640px; }
     .advantages-note__text {
@@ -3776,6 +3775,140 @@ a {
       color: rgba(255, 255, 255, 0.7);
       margin: 0;
       margin-top: 4px; }
+
+.reviews {
+  padding-top: 130px;
+  padding-bottom: 220px;
+  background: url("../img/reviews-starry-sky.png") 50%; }
+  .reviews__title {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin-bottom: 79px; }
+  .reviews__content {
+    position: relative;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: no-wrap;
+        flex-wrap: no-wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .reviews-list {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: no-wrap;
+        flex-wrap: no-wrap; }
+    .reviews-list__text {
+      margin: 0;
+      margin-bottom: auto; }
+    .reviews-list__rate {
+      margin-bottom: 13px; }
+    .reviews-list__item {
+      padding: 25px 50px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      min-height: 290px;
+      min-width: 587px;
+      background: rgba(255, 255, 255, 0.05);
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      -ms-flex-wrap: no-wrap;
+          flex-wrap: no-wrap; }
+      .reviews-list__item:not(:last-child) {
+        margin-right: 12px; }
+      .reviews-list__item-title {
+        font-weight: 600;
+        color: rgba(233, 233, 233, 0.9);
+        line-height: 1.39; }
+    .reviews-list__person {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      .reviews-list__person img {
+        border-radius: 50%;
+        margin-right: 15px; }
+  .reviews__pagination {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: no-wrap;
+        flex-wrap: no-wrap; }
+    .reviews__pagination-wrapper {
+      display: grid;
+      justify-items: center;
+      margin-top: 38px; }
+    .reviews__pagination-bullet {
+      width: 8px;
+      height: 8px;
+      background: #C4C4C4;
+      border-radius: 50%; }
+      .reviews__pagination-bullet_active {
+        width: 12px;
+        height: 12px;
+        background: #fff; }
+      .reviews__pagination-bullet:not(:last-child) {
+        margin-right: 8px; }
 
 .home-main {
   position: relative;
@@ -3923,9 +4056,11 @@ a {
       height: 230px;
       -webkit-filter: blur(80px);
               filter: blur(80px); }
-  .advantages-decorative__phone img {
-    left: -210px;
-    top: -50px; } }
+  .advantages {
+    padding-bottom: 42px; }
+    .advantages-decorative__phone img {
+      left: -210px;
+      top: -50px; } }
 
 @media screen and (max-width: 420px) {
   .main-decorative__blur-star {
