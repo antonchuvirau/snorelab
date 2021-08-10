@@ -1,6 +1,12 @@
 .partner-app {
   padding-top: 81px;
   padding-bottom: 109px;
+  background: $background;
+  position: relative;
+  & .container {
+    position: relative;
+    z-index: 1;
+  }
   &__title {
     margin-bottom: 65px;
   }
@@ -12,5 +18,35 @@
     font-size: 2.4rem;
     line-height: 1.25;
     margin: 0;
+  }
+  &__decorative {
+    &-wrapper {
+      width: 100%;
+      height: 100%;
+    }
+    &-phones {
+      width: 1660px;
+      & img {
+        left: -620px;
+        top: -580px;
+      }
+    }
+    &-star {
+      position: absolute;
+      left: -780px;
+      & svg {
+        filter: blur(130px);
+      }
+    }
+  }
+  &__download-block {
+    align-items: flex-end;
+    justify-content: flex-end;
+    & a {
+      margin-bottom: 7px;
+    }
+    & a:last-child {
+      margin-right: 42px;
+    }
   }
 }

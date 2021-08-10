@@ -1,7 +1,9 @@
 .reviews {
   padding-top: 130px;
   padding-bottom: 220px;
-  background: image('reviews-starry-sky.png') 50%;
+  background: 
+  linear-gradient(360deg, #020F1E 3.99%, rgba(2, 15, 30, 0.13) 26.54%, rgba(2, 15, 30, 0) 83.93%, #020F1E 98.34%), 
+  image('reviews-starry-sky.png') 50%;
   &__title {
     display: inline-block;
     position: relative;
