@@ -1,7 +1,7 @@
 .advantages {
   position: relative;
   padding-top: 121px;
-  height: 2000px;
+  padding-bottom: 42px;
   &-note {
     max-width: 640px;
     &__text {
@@ -37,6 +37,7 @@
     &__note {
       max-width: 330px;
       position: relative;
+      z-index: 1;
       &::before {
         content: '';
         position: absolute;
@@ -68,8 +69,11 @@
     &__item {
       background: rgba($white, .05);
       padding: 38px 40px 39px 120px;
-      margin-bottom: 19px;
       border-radius: 10px;
+      z-index: 1;
+      &:not(:last-child) {
+        margin-bottom: 19px;
+      }
       &:nth-child(2n-1) {
         margin-left: auto;
       }

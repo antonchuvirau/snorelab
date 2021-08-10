@@ -7,6 +7,25 @@
       min-height: auto;
     }
   }
+
+  .advantages {
+    &-decorative {
+      &__phone {
+        & img {
+          position: relative;
+          left: -260px;
+          top: 0;
+        }
+      }
+      &__blur-star {
+        right: -250px;
+        & svg {
+          width: 570px;
+          height: 570px;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -32,6 +51,30 @@
             height: 529px;
           }
         }
+      }
+    }
+  }
+
+  .advantages {
+    &-decorative {
+      &__phone {
+        & img {
+          position: relative;
+          left: 0;
+          top: 0;
+        }
+      }
+      &__wrapper {
+        max-height: 570px;
+      }
+      &__blur-star {
+        top: 1200px;
+        right: -200px;
+      }
+    }
+    &-list {
+      &__item {
+        border-radius: 8px;
       }
     }
   }
@@ -100,6 +143,53 @@
 
   .advantages {
     padding-top: 82px;
+    &-list {
+      &__item {
+        padding: 20px 16px 20px 62px;
+        &:not(:last-child) {
+          margin-bottom: 16px;
+        }
+      }
+      &__note {
+        max-width: 300px;
+        &::before {
+          width: 30px;
+          height: 30px;
+          top: 0;
+          right: calc(100% + 16px);
+          border-radius: 8px;
+        }
+        &:nth-child(1n)::before {
+          background-size: 18px;
+        }
+      }
+      &__title {
+        font-size: 2rem;
+        line-height: 1;
+      }
+      &__text {
+        margin-top: 9px;
+        font-size: 1.6rem;
+        line-height: 1.25;
+      }
+    }
+    &-decorative {
+      &__phone {
+        & img {
+          left: calc(15% - 340px);
+        }
+      }
+      &__blur-star {
+        top: 1330px;
+        right: -240px;
+      }
+    }
+    &-note {
+      &__text {
+        font-size: 1.6rem;
+        line-height: 1.25;
+      }
+    }
   }
 }
 
@@ -107,7 +197,7 @@
   .header {
     &-logo {
       &__link {
-        & img {
+        & svg {
           width: 108px;
           height: 30px;
         }
@@ -132,6 +222,20 @@
             filter: blur(80px);
           }
         }
+      }
+    }
+  }
+
+  .advantages {
+    &-decorative {
+      &__phone {
+        & img {
+          left: -210px;
+          top: -50px;
+        }
+      }
+      &__blur-star {
+        
       }
     }
   }
