@@ -3965,10 +3965,14 @@ a {
     width: 100%;
     height: 100%; }
   .partner-app__decorative-phones {
-    width: 1660px; }
+    position: relative;
+    width: 1660px;
+    z-index: -1; }
     .partner-app__decorative-phones img {
+      position: absolute;
       left: -620px;
-      top: -580px; }
+      top: -580px;
+      z-index: 1; }
   .partner-app__decorative-star {
     position: absolute;
     left: -780px; }
@@ -3986,6 +3990,13 @@ a {
       margin-bottom: 7px; }
     .partner-app__download-block a:last-child {
       margin-right: 42px; }
+
+@media screen and (max-width: 1400px) {
+  .partner-app__decorative-phones {
+    width: 1300px; }
+    .partner-app__decorative-phones img {
+      top: -470px;
+      left: -500px; } }
 
 .home-main {
   position: relative;
@@ -4020,7 +4031,12 @@ a {
     right: -250px; }
     .advantages-decorative__blur-star svg {
       width: 570px;
-      height: 570px; } }
+      height: 570px; }
+  .partner-app__decorative-phones {
+    width: 1000px; }
+    .partner-app__decorative-phones img {
+      top: -280px;
+      left: -330px; } }
 
 @media screen and (max-width: 992px) {
   .home-main {
@@ -4048,7 +4064,25 @@ a {
     top: 1200px;
     right: -200px; }
   .advantages-list__item {
-    border-radius: 8px; } }
+    border-radius: 8px; }
+  .advantages-sg {
+    margin-top: 66px; }
+  .partner-app__decorative {
+    max-height: none; }
+    .partner-app__decorative-phones {
+      width: 1200px;
+      max-height: 630px; }
+      .partner-app__decorative-phones img {
+        position: relative;
+        top: -400px;
+        left: -400px; }
+  .partner-app__download-block {
+    height: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .partner-app__download-block a:last-child {
+      margin-right: 0; } }
 
 @media screen and (max-width: 767px) {
   .home-main {
@@ -4128,7 +4162,18 @@ a {
     .reviews-list__item {
       min-height: 400px;
       min-width: 295px;
-      padding: 27px 25px; } }
+      padding: 27px 25px; }
+  .partner-app__title {
+    margin-bottom: 37px; }
+  .partner-app__app svg {
+    width: 272px;
+    height: 70px; }
+  .partner-app__note {
+    font-size: 1.6rem;
+    line-height: 1.25;
+    font-weight: 400; }
+  .partner-app__decorative-phones img {
+    left: -480px; } }
 
 @media screen and (max-width: 576px) {
   .header-logo__link svg {
@@ -4160,9 +4205,19 @@ a {
     color: rgba(255, 255, 255, 0.9);
     font-size: 1.6rem;
     line-height: 1.25;
-    font-weight: 400; } }
+    font-weight: 400; }
+  .partner-app__decorative {
+    max-height: 430px; }
+    .partner-app__decorative-phones {
+      width: 840px; }
+      .partner-app__decorative-phones img {
+        left: -280px;
+        top: -300px; } }
 
 @media screen and (max-width: 420px) {
   .main-decorative__blur-star {
     top: 100px;
-    right: -10px; } }
+    right: -10px; }
+  .partner-app__decorative-phones img {
+    left: -355px;
+    top: -310px; } }

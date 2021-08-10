@@ -25,10 +25,14 @@
       height: 100%;
     }
     &-phones {
+      position: relative;
       width: 1660px;
+      z-index: -1;
       & img {
+        position: absolute;
         left: -620px;
         top: -580px;
+        z-index: 1;
       }
     }
     &-star {
@@ -47,6 +51,18 @@
     }
     & a:last-child {
       margin-right: 42px;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .partner-app {
+    &__decorative-phones {
+      width: 1300px;
+      & img {
+        top: -470px;
+        left: -500px;
+      }
     }
   }
 }

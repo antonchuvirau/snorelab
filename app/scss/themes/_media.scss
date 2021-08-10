@@ -26,6 +26,18 @@
       }
     }
   }
+
+  .partner-app {
+    &__decorative {
+      &-phones {
+        width: 1000px;
+        & img {
+          top: -280px;
+          left: -330px;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -75,6 +87,31 @@
     &-list {
       &__item {
         border-radius: 8px;
+      }
+    }
+    &-sg {
+      margin-top: 66px;
+    }
+  }
+
+  .partner-app {
+    &__decorative {
+      max-height: none;
+      &-phones {
+        width: 1200px;
+        max-height: 630px;
+        & img {
+          position: relative;
+          top: -400px;
+          left: -400px;
+        }
+      }
+    }
+    &__download-block {
+      height: auto;
+      justify-content: center;
+      & a:last-child {
+        margin-right: 0;
       }
     }
   }
@@ -208,6 +245,30 @@
       }
     }
   }
+
+  .partner-app {
+    &__title {
+      margin-bottom: 37px;
+    }
+    &__app {
+      & svg {
+        width: 272px;
+        height: 70px;
+      }
+    }
+    &__note {
+      font-size: 1.6rem;
+      line-height: 1.25;
+      font-weight: 400;
+    }
+    &__decorative {
+      &-phones {
+        & img {
+          left: -480px;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -275,6 +336,19 @@
       }
     }
   }
+
+  .partner-app {
+    &__decorative {
+      max-height: 430px;
+      &-phones {
+        width: 840px;
+        & img {
+          left: -280px;
+          top: -300px;
+        }
+      }
+    }
+  }
 }
 
 
@@ -285,6 +359,13 @@
         top: 100px;
         right: -10px;
       }
+    }
+  }
+
+  .partner-app {
+    &__decorative-phones img {
+      left: -355px;
+      top: -310px;
     }
   }
 }
