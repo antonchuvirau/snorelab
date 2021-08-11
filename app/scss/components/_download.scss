@@ -7,8 +7,9 @@
       border-radius: 10px;
       background: $white;
       padding: 1.3rem 2.5rem;
-      &:not(:last-child) {
-        margin-right: 10px;
+      margin-right: 10px;
+      &:last-child {
+        margin-right: 0;
       }
     }
   }

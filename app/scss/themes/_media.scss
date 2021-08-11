@@ -301,6 +301,45 @@
       margin-top: 58px;
     }
   }
+
+  .footer {
+    padding-top: 54px;
+    padding-bottom: 31px;
+    &__logo svg {
+      width: 135px;
+    }
+    &__note {
+      margin: 25px 0;
+      margin-bottom: 49px;
+    }
+    &-list {
+      &__title {
+        margin-bottom: 19px;
+      }
+    }
+    &__download {
+      margin-top: 64px;
+      align-items: center;
+      & img {
+        width: auto;
+        height: auto;
+      }
+      & a {
+        border-radius: 10px;
+      }
+      & a[data-client="Google Play"] {
+        margin-right: 0;
+      }
+    }
+    &__social {
+      margin-top: 56px;
+      @include flex(row, flex-start, center);
+    }
+    &__rights {
+      margin-top: 67px;
+      text-align: center;
+    }
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -402,6 +441,18 @@
         letter-spacing: -.01em;
         max-height: none;
       }
+    }
+  }
+
+  .footer {
+    &__download {
+      & a {
+        width: 100%;
+      }
+    }
+    &__note {
+      font-size: 1.6rem;
+      line-height: 1.25;
     }
   }
 }
