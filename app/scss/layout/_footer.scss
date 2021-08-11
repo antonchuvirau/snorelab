@@ -15,7 +15,50 @@
   }
   &__blur-1 {
     position: absolute;
-    top: -750px;
-    left: -100px;
+    top: -460px;
+    left: -150px;
+  }
+  &__social {
+    @include flex();
+    &-icon {
+      background: rgba($white, .05);
+      border-radius: 10px;
+      width: 60px;
+      height: 60px;
+      display: grid;
+      place-items: center;
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  }
+  &-list {
+    &__title {
+      font-weight: 700;
+      letter-spacing: -.01em;
+      margin-bottom: 25px;
+      color: $gray-100;
+    }
+    &__item:not(:last-child) {
+      margin-bottom: 10px;
+    }
+    &__link {
+      color: $gray-100;
+    }
+  }
+  &__download {
+    flex-direction: column;
+    & a {
+      margin: 0;
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__rights {
+    margin: 0;
+    margin-top: 88px;
+    color: $gray-100;
   }
 }

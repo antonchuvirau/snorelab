@@ -3508,10 +3508,10 @@ a {
     content: '';
     position: absolute;
     left: 0;
-    bottom: 3px;
+    bottom: 1px;
     width: 100%;
     height: 1px;
-    background: #FFF; }
+    background: #E9E9E9; }
 
 .o-hidden {
   overflow: hidden; }
@@ -3522,109 +3522,6 @@ a {
 @media screen and (max-width: 576px) {
   .container {
     padding: 0 16px; } }
-
-.header {
-  position: absolute;
-  min-height: 100px;
-  width: 100%;
-  z-index: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: no-wrap;
-      flex-wrap: no-wrap; }
-  .header-navigation {
-    margin-top: 34px; }
-    .header-navigation__list {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -ms-flex-wrap: no-wrap;
-          flex-wrap: no-wrap; }
-    .header-navigation__item[active] a {
-      color: rgba(255, 255, 255, 0.3); }
-  .header-logo {
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: no-wrap;
-        flex-wrap: no-wrap; }
-
-@media screen and (max-width: 576px) {
-  .header {
-    min-height: 70px; } }
-
-.main-decorative__wrapper {
-  position: relative; }
-
-.main-decorative__blur-star {
-  position: absolute;
-  top: -50px;
-  right: -220px; }
-  .main-decorative__blur-star svg {
-    -webkit-transform: rotate(-18.74deg);
-        -ms-transform: rotate(-18.74deg);
-            transform: rotate(-18.74deg);
-    -webkit-filter: blur(300px);
-            filter: blur(300px); }
-
-.main-decorative__phones {
-  position: absolute;
-  top: -54px;
-  right: -96px;
-  min-height: 470px; }
-
-.main-how-works {
-  background: url("../img/main-starry-sky.png") 50%; }
-
-.footer {
-  background: #020F1E;
-  padding-top: 52px;
-  padding-bottom: 22px;
-  position: relative; }
-  .footer__wrapper {
-    position: relative;
-    z-index: 2; }
-  .footer__note {
-    max-width: 290px;
-    margin: 18px 0;
-    margin-bottom: 28px;
-    color: rgba(233, 233, 233, 0.7); }
-  .footer__blur-1 {
-    position: absolute;
-    top: -750px;
-    left: -100px; }
 
 .btn {
   background: rgba(255, 255, 255, 0.05);
@@ -4117,6 +4014,157 @@ a {
       top: 24px;
       right: 31px;
       background: url("../img/icons/btn-arrow.svg") no-repeat 50%; }
+
+.header {
+  position: absolute;
+  min-height: 100px;
+  width: 100%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap; }
+  .header-navigation {
+    margin-top: 34px; }
+    .header-navigation__list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-wrap: no-wrap;
+          flex-wrap: no-wrap; }
+    .header-navigation__item[active] a {
+      color: rgba(255, 255, 255, 0.3); }
+  .header-logo {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: no-wrap;
+        flex-wrap: no-wrap; }
+
+@media screen and (max-width: 576px) {
+  .header {
+    min-height: 70px; } }
+
+.main-decorative__wrapper {
+  position: relative; }
+
+.main-decorative__blur-star {
+  position: absolute;
+  top: -50px;
+  right: -220px; }
+  .main-decorative__blur-star svg {
+    -webkit-transform: rotate(-18.74deg);
+        -ms-transform: rotate(-18.74deg);
+            transform: rotate(-18.74deg);
+    -webkit-filter: blur(300px);
+            filter: blur(300px); }
+
+.main-decorative__phones {
+  position: absolute;
+  top: -54px;
+  right: -96px;
+  min-height: 470px; }
+
+.main-how-works {
+  background: url("../img/main-starry-sky.png") 50%; }
+
+.footer {
+  background: #020F1E;
+  padding-top: 52px;
+  padding-bottom: 22px;
+  position: relative; }
+  .footer__wrapper {
+    position: relative;
+    z-index: 2; }
+  .footer__note {
+    max-width: 290px;
+    margin: 18px 0;
+    margin-bottom: 28px;
+    color: rgba(233, 233, 233, 0.7); }
+  .footer__blur-1 {
+    position: absolute;
+    top: -460px;
+    left: -150px; }
+  .footer__social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: no-wrap;
+        flex-wrap: no-wrap; }
+    .footer__social-icon {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      width: 60px;
+      height: 60px;
+      display: grid;
+      place-items: center; }
+      .footer__social-icon:not(:last-child) {
+        margin-right: 10px; }
+  .footer-list__title {
+    font-weight: 700;
+    letter-spacing: -.01em;
+    margin-bottom: 25px;
+    color: #E9E9E9; }
+  .footer-list__item:not(:last-child) {
+    margin-bottom: 10px; }
+  .footer-list__link {
+    color: #E9E9E9; }
+  .footer__download {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .footer__download a {
+      margin: 0;
+      margin-bottom: 10px; }
+      .footer__download a:last-child {
+        margin-bottom: 0; }
+  .footer__rights {
+    margin: 0;
+    margin-top: 88px;
+    color: #E9E9E9; }
 
 .home-main {
   position: relative;
