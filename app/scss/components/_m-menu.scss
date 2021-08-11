@@ -1,0 +1,22 @@
+.m-menu {
+  background: $background;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  &__close {
+    @include flex(row, center, flex-end);
+    height: 100%;
+    &-btn {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  &__logo {
+    &-link {
+      @include flex(row, center);
+    }
+  }
+}
