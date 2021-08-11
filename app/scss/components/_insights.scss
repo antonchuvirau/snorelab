@@ -1,0 +1,87 @@
+.insights {
+  padding-top: 81px;
+  padding-bottom: 105px;
+  background: $background;
+  position: relative;
+  &__title {
+    display: inline-block;
+    margin-bottom: 59px;
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+  }
+  &-item {
+    padding: 44px 30px;
+    box-sizing: border-box;
+    min-height: 480px;
+    @include flex(column, flex-start, flex-end);
+    border-radius: 20px;
+    &__links {
+      margin: 0;
+      margin-bottom: 10px;
+      color: rgba($white, .7);
+    }
+    &__link {
+      color: $blue-900;
+    }
+    &__title {
+      max-height: 30px;
+    }
+    &_lg {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      & h3 {
+        max-height: none;
+      }
+      &__text {
+        margin: 0;
+        margin-top: 10px;
+        color: rgba($white, .7);
+      }
+    }
+    &[data-topic="How Can SnoreLab Help My Snoring?"] {
+      background: linear-gradient(360deg, #052952 0%, rgba(5, 41, 82, 0) 100%),
+      image('insights/insight-1.jpg');
+    }
+    &[data-topic="20 Common Questions About Snoring Answered"] {
+      background: linear-gradient(360deg, #052952 0%, rgba(5, 41, 82, 0) 100%),
+      image('insights/insight-2.jpg');
+    }
+    &[data-topic="5 Easy Habits to Stop Snoring Naturally"] {
+      background: linear-gradient(360deg, #052952 0%, rgba(5, 41, 82, 0) 100%),
+      image('insights/insight-3.jpg');
+    }
+    &[data-topic="Mouth Exercises for Snoring"] {
+      background: linear-gradient(360deg, #052952 0%, rgba(5, 41, 82, 0) 100%),
+      image('insights/insight-4.jpg');
+    }
+    &[data-topic="What is Snoring? – An Introduction"] {
+      background: linear-gradient(360deg, #052952 0%, rgba(5, 41, 82, 0) 100%),
+      image('insights/insight-5.jpg');
+    }
+  }
+  &__read-more {
+    margin-top: 60px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-right: 2.458em;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 8px;
+      height: 14px;
+      top: 24px;
+      right: 31px;
+      background: icon('btn-arrow.svg') no-repeat 50%;
+    }
+  }
+  &__blur {
+    position: absolute;
+    bottom: -480px;
+    left: -20px;
+  }
+}

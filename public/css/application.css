@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap Grid v4.5.3 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -3605,7 +3606,14 @@ a {
   background: url("../img/main-starry-sky.png") 50%; }
 
 .btn {
-  border-radius: 10px; }
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: .625em 1.375em;
+  color: #17A2FF;
+  font-size: 2.4rem;
+  line-height: 1.25;
+  font-weight: 700;
+  text-align: center; }
 
 .fade-title {
   background: -o-linear-gradient(181.06deg, #8FAEEA 29.66%, #1D66A7 104.91%);
@@ -3998,6 +4006,98 @@ a {
       top: -470px;
       left: -500px; } }
 
+.insights {
+  padding-top: 81px;
+  padding-bottom: 105px;
+  background: #020F1E;
+  position: relative; }
+  .insights__title {
+    display: inline-block;
+    margin-bottom: 59px; }
+  .insights__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px; }
+  .insights-item {
+    padding: 44px 30px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    min-height: 480px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: no-wrap;
+        flex-wrap: no-wrap;
+    border-radius: 20px; }
+    .insights-item__links {
+      margin: 0;
+      margin-bottom: 10px;
+      color: rgba(255, 255, 255, 0.7); }
+    .insights-item__link {
+      color: #17A2FF; }
+    .insights-item__title {
+      max-height: 30px; }
+    .insights-item_lg {
+      grid-column-start: 1;
+      grid-column-end: 3; }
+      .insights-item_lg h3 {
+        max-height: none; }
+      .insights-item_lg__text {
+        margin: 0;
+        margin-top: 10px;
+        color: rgba(255, 255, 255, 0.7); }
+    .insights-item[data-topic="How Can SnoreLab Help My Snoring?"] {
+      background: -webkit-gradient(linear, left bottom, left top, from(#052952), to(rgba(5, 41, 82, 0))), url("../img/insights/insight-1.jpg");
+      background: -o-linear-gradient(bottom, #052952 0%, rgba(5, 41, 82, 0) 100%), url("../img/insights/insight-1.jpg");
+      background: linear-gradient(360deg, #052952 0%, rgba(5, 41, 82, 0) 100%), url("../img/insights/insight-1.jpg"); }
+    .insights-item[data-topic="20 Common Questions About Snoring Answered"] {
+      background: -webkit-gradient(linear, left bottom, left top, from(#052952), to(rgba(5, 41, 82, 0))), url("../img/insights/insight-2.jpg");
+      background: -o-linear-gradient(bottom, #052952 0%, rgba(5, 41, 82, 0) 100%), url("../img/insights/insight-2.jpg");
+      background: linear-gradient(360deg, #052952 0%, rgba(5, 41, 82, 0) 100%), url("../img/insights/insight-2.jpg"); }
+    .insights-item[data-topic="5 Easy Habits to Stop Snoring Naturally"] {
+      background: -webkit-gradient(linear, left bottom, left top, from(#052952), to(rgba(5, 41, 82, 0))), url("../img/insights/insight-3.jpg");
+      background: -o-linear-gradient(bottom, #052952 0%, rgba(5, 41, 82, 0) 100%), url("../img/insights/insight-3.jpg");
+      background: linear-gradient(360deg, #052952 0%, rgba(5, 41, 82, 0) 100%), url("../img/insights/insight-3.jpg"); }
+    .insights-item[data-topic="Mouth Exercises for Snoring"] {
+      background: -webkit-gradient(linear, left bottom, left top, from(#052952), to(rgba(5, 41, 82, 0))), url("../img/insights/insight-4.jpg");
+      background: -o-linear-gradient(bottom, #052952 0%, rgba(5, 41, 82, 0) 100%), url("../img/insights/insight-4.jpg");
+      background: linear-gradient(360deg, #052952 0%, rgba(5, 41, 82, 0) 100%), url("../img/insights/insight-4.jpg"); }
+    .insights-item[data-topic="What is Snoring? – An Introduction"] {
+      background: -webkit-gradient(linear, left bottom, left top, from(#052952), to(rgba(5, 41, 82, 0))), url("../img/insights/insight-5.jpg");
+      background: -o-linear-gradient(bottom, #052952 0%, rgba(5, 41, 82, 0) 100%), url("../img/insights/insight-5.jpg");
+      background: linear-gradient(360deg, #052952 0%, rgba(5, 41, 82, 0) 100%), url("../img/insights/insight-5.jpg"); }
+  .insights__read-more {
+    margin-top: 60px;
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    padding-right: 2.458em; }
+    .insights__read-more::after {
+      content: '';
+      position: absolute;
+      width: 8px;
+      height: 14px;
+      top: 24px;
+      right: 31px;
+      background: url("../img/icons/btn-arrow.svg") no-repeat 50%; }
+  .insights__blur {
+    position: absolute;
+    bottom: -480px;
+    left: -20px; }
+
 .home-main {
   position: relative;
   padding: 100px 0;
@@ -4206,13 +4306,15 @@ a {
     font-size: 1.6rem;
     line-height: 1.25;
     font-weight: 400; }
-  .partner-app__decorative {
-    max-height: 430px; }
-    .partner-app__decorative-phones {
-      width: 840px; }
-      .partner-app__decorative-phones img {
-        left: -280px;
-        top: -300px; } }
+  .partner-app {
+    padding-bottom: 60px; }
+    .partner-app__decorative {
+      max-height: 430px; }
+      .partner-app__decorative-phones {
+        width: 840px; }
+        .partner-app__decorative-phones img {
+          left: -280px;
+          top: -300px; } }
 
 @media screen and (max-width: 420px) {
   .main-decorative__blur-star {
