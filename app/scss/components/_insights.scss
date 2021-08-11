@@ -12,6 +12,8 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1fr;
     grid-gap: 10px;
+    position: relative;
+    z-index: 2;
   }
   &-item {
     padding: 44px 30px;
@@ -44,28 +46,29 @@
     }
     &[data-topic="How Can SnoreLab Help My Snoring?"] {
       background: linear-gradient(360deg, #052952 0%, rgba(5, 41, 82, 0) 100%),
-      image('insights/insight-1.jpg');
+      image('insights/insight-1.jpg') 50% no-repeat;
     }
     &[data-topic="20 Common Questions About Snoring Answered"] {
       background: linear-gradient(360deg, #052952 0%, rgba(5, 41, 82, 0) 100%),
-      image('insights/insight-2.jpg');
+      image('insights/insight-2.jpg') 50% no-repeat;
     }
     &[data-topic="5 Easy Habits to Stop Snoring Naturally"] {
       background: linear-gradient(360deg, #052952 0%, rgba(5, 41, 82, 0) 100%),
-      image('insights/insight-3.jpg');
+      image('insights/insight-3.jpg') 50% no-repeat;
     }
     &[data-topic="Mouth Exercises for Snoring"] {
       background: linear-gradient(360deg, #052952 0%, rgba(5, 41, 82, 0) 100%),
-      image('insights/insight-4.jpg');
+      image('insights/insight-4.jpg') 50% no-repeat;
     }
     &[data-topic="What is Snoring? – An Introduction"] {
       background: linear-gradient(360deg, #052952 0%, rgba(5, 41, 82, 0) 100%),
-      image('insights/insight-5.jpg');
+      image('insights/insight-5.jpg') 50% no-repeat;
     }
   }
   &__read-more {
     margin-top: 60px;
     position: relative;
+    z-index: 2;
     left: 50%;
     transform: translateX(-50%);
     padding-right: 2.458em;
@@ -78,10 +81,5 @@
       right: 31px;
       background: icon('btn-arrow.svg') no-repeat 50%;
     }
-  }
-  &__blur {
-    position: absolute;
-    bottom: -480px;
-    left: -20px;
   }
 }

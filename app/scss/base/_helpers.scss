@@ -30,6 +30,10 @@ a {
   overflow: hidden;
 }
 
+.ox-hidden {
+  overflow-x: hidden;
+}
+
 @media screen and (max-width: 576px) {
   .container {
     padding: 0 16px;

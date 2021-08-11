@@ -3516,6 +3516,9 @@ a {
 .o-hidden {
   overflow: hidden; }
 
+.ox-hidden {
+  overflow-x: hidden; }
+
 @media screen and (max-width: 576px) {
   .container {
     padding: 0 16px; } }
@@ -3604,6 +3607,24 @@ a {
 
 .main-how-works {
   background: url("../img/main-starry-sky.png") 50%; }
+
+.footer {
+  background: #020F1E;
+  padding-top: 52px;
+  padding-bottom: 22px;
+  position: relative; }
+  .footer__wrapper {
+    position: relative;
+    z-index: 2; }
+  .footer__note {
+    max-width: 290px;
+    margin: 18px 0;
+    margin-bottom: 28px;
+    color: rgba(233, 233, 233, 0.7); }
+  .footer__blur-1 {
+    position: absolute;
+    top: -750px;
+    left: -100px; }
 
 .btn {
   background: rgba(255, 255, 255, 0.05);
@@ -4018,7 +4039,9 @@ a {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1fr;
-    grid-gap: 10px; }
+    grid-gap: 10px;
+    position: relative;
+    z-index: 2; }
   .insights-item {
     padding: 44px 30px;
     -webkit-box-sizing: border-box;
@@ -4058,28 +4081,29 @@ a {
         margin-top: 10px;
         color: rgba(255, 255, 255, 0.7); }
     .insights-item[data-topic="How Can SnoreLab Help My Snoring?"] {
-      background: -webkit-gradient(linear, left bottom, left top, from(#052952), to(rgba(5, 41, 82, 0))), url("../img/insights/insight-1.jpg");
-      background: -o-linear-gradient(bottom, #052952 0%, rgba(5, 41, 82, 0) 100%), url("../img/insights/insight-1.jpg");
-      background: linear-gradient(360deg, #052952 0%, rgba(5, 41, 82, 0) 100%), url("../img/insights/insight-1.jpg"); }
+      background: -webkit-gradient(linear, left bottom, left top, from(#052952), to(rgba(5, 41, 82, 0))), url("../img/insights/insight-1.jpg") 50% no-repeat;
+      background: -o-linear-gradient(bottom, #052952 0%, rgba(5, 41, 82, 0) 100%), url("../img/insights/insight-1.jpg") 50% no-repeat;
+      background: linear-gradient(360deg, #052952 0%, rgba(5, 41, 82, 0) 100%), url("../img/insights/insight-1.jpg") 50% no-repeat; }
     .insights-item[data-topic="20 Common Questions About Snoring Answered"] {
-      background: -webkit-gradient(linear, left bottom, left top, from(#052952), to(rgba(5, 41, 82, 0))), url("../img/insights/insight-2.jpg");
-      background: -o-linear-gradient(bottom, #052952 0%, rgba(5, 41, 82, 0) 100%), url("../img/insights/insight-2.jpg");
-      background: linear-gradient(360deg, #052952 0%, rgba(5, 41, 82, 0) 100%), url("../img/insights/insight-2.jpg"); }
+      background: -webkit-gradient(linear, left bottom, left top, from(#052952), to(rgba(5, 41, 82, 0))), url("../img/insights/insight-2.jpg") 50% no-repeat;
+      background: -o-linear-gradient(bottom, #052952 0%, rgba(5, 41, 82, 0) 100%), url("../img/insights/insight-2.jpg") 50% no-repeat;
+      background: linear-gradient(360deg, #052952 0%, rgba(5, 41, 82, 0) 100%), url("../img/insights/insight-2.jpg") 50% no-repeat; }
     .insights-item[data-topic="5 Easy Habits to Stop Snoring Naturally"] {
-      background: -webkit-gradient(linear, left bottom, left top, from(#052952), to(rgba(5, 41, 82, 0))), url("../img/insights/insight-3.jpg");
-      background: -o-linear-gradient(bottom, #052952 0%, rgba(5, 41, 82, 0) 100%), url("../img/insights/insight-3.jpg");
-      background: linear-gradient(360deg, #052952 0%, rgba(5, 41, 82, 0) 100%), url("../img/insights/insight-3.jpg"); }
+      background: -webkit-gradient(linear, left bottom, left top, from(#052952), to(rgba(5, 41, 82, 0))), url("../img/insights/insight-3.jpg") 50% no-repeat;
+      background: -o-linear-gradient(bottom, #052952 0%, rgba(5, 41, 82, 0) 100%), url("../img/insights/insight-3.jpg") 50% no-repeat;
+      background: linear-gradient(360deg, #052952 0%, rgba(5, 41, 82, 0) 100%), url("../img/insights/insight-3.jpg") 50% no-repeat; }
     .insights-item[data-topic="Mouth Exercises for Snoring"] {
-      background: -webkit-gradient(linear, left bottom, left top, from(#052952), to(rgba(5, 41, 82, 0))), url("../img/insights/insight-4.jpg");
-      background: -o-linear-gradient(bottom, #052952 0%, rgba(5, 41, 82, 0) 100%), url("../img/insights/insight-4.jpg");
-      background: linear-gradient(360deg, #052952 0%, rgba(5, 41, 82, 0) 100%), url("../img/insights/insight-4.jpg"); }
+      background: -webkit-gradient(linear, left bottom, left top, from(#052952), to(rgba(5, 41, 82, 0))), url("../img/insights/insight-4.jpg") 50% no-repeat;
+      background: -o-linear-gradient(bottom, #052952 0%, rgba(5, 41, 82, 0) 100%), url("../img/insights/insight-4.jpg") 50% no-repeat;
+      background: linear-gradient(360deg, #052952 0%, rgba(5, 41, 82, 0) 100%), url("../img/insights/insight-4.jpg") 50% no-repeat; }
     .insights-item[data-topic="What is Snoring? – An Introduction"] {
-      background: -webkit-gradient(linear, left bottom, left top, from(#052952), to(rgba(5, 41, 82, 0))), url("../img/insights/insight-5.jpg");
-      background: -o-linear-gradient(bottom, #052952 0%, rgba(5, 41, 82, 0) 100%), url("../img/insights/insight-5.jpg");
-      background: linear-gradient(360deg, #052952 0%, rgba(5, 41, 82, 0) 100%), url("../img/insights/insight-5.jpg"); }
+      background: -webkit-gradient(linear, left bottom, left top, from(#052952), to(rgba(5, 41, 82, 0))), url("../img/insights/insight-5.jpg") 50% no-repeat;
+      background: -o-linear-gradient(bottom, #052952 0%, rgba(5, 41, 82, 0) 100%), url("../img/insights/insight-5.jpg") 50% no-repeat;
+      background: linear-gradient(360deg, #052952 0%, rgba(5, 41, 82, 0) 100%), url("../img/insights/insight-5.jpg") 50% no-repeat; }
   .insights__read-more {
     margin-top: 60px;
     position: relative;
+    z-index: 2;
     left: 50%;
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
@@ -4093,10 +4117,6 @@ a {
       top: 24px;
       right: 31px;
       background: url("../img/icons/btn-arrow.svg") no-repeat 50%; }
-  .insights__blur {
-    position: absolute;
-    bottom: -480px;
-    left: -20px; }
 
 .home-main {
   position: relative;
@@ -4182,7 +4202,10 @@ a {
         -ms-flex-pack: center;
             justify-content: center; }
     .partner-app__download-block a:last-child {
-      margin-right: 0; } }
+      margin-right: 0; }
+  .insights__grid {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr; } }
 
 @media screen and (max-width: 767px) {
   .home-main {
@@ -4273,7 +4296,24 @@ a {
     line-height: 1.25;
     font-weight: 400; }
   .partner-app__decorative-phones img {
-    left: -480px; } }
+    left: -480px; }
+  .insights {
+    padding-bottom: 78px; }
+    .insights__grid {
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-columns: 100%; }
+    .insights-item {
+      min-height: 328px; }
+      .insights-item:nth-child(1n) {
+        background-size: cover; }
+      .insights-item_lg {
+        grid-column-end: 2; }
+    .insights__title {
+      font-size: 4.5rem;
+      line-height: 1.11;
+      letter-spacing: -.02em; }
+    .insights__read-more {
+      margin-top: 58px; } }
 
 @media screen and (max-width: 576px) {
   .header-logo__link svg {
@@ -4314,7 +4354,22 @@ a {
         width: 840px; }
         .partner-app__decorative-phones img {
           left: -280px;
-          top: -300px; } }
+          top: -300px; }
+  .insights__title {
+    font-size: 3rem;
+    line-height: 1.07;
+    letter-spacing: 0;
+    margin-bottom: 41px; }
+  .insights-item {
+    padding: 20px; }
+    .insights-item__link {
+      font-size: 1.6rem;
+      line-height: 1.25; }
+    .insights-item__title {
+      font-size: 1.8rem;
+      line-height: 1.39;
+      letter-spacing: -.01em;
+      max-height: none; } }
 
 @media screen and (max-width: 420px) {
   .main-decorative__blur-star {

@@ -1,0 +1,21 @@
+.footer {
+  background: $background;
+  padding-top: 52px;
+  padding-bottom: 22px;
+  position: relative;
+  &__wrapper {
+    position: relative;
+    z-index: 2;
+  }
+  &__note {
+    max-width: 290px;
+    margin: 18px 0;
+    margin-bottom: 28px;
+    color: rgba($gray-100, .7);
+  }
+  &__blur-1 {
+    position: absolute;
+    top: -750px;
+    left: -100px;
+  }
+}
