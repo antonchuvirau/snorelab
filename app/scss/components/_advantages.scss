@@ -4,6 +4,8 @@
   background: $background;
   &-note {
     max-width: 640px;
+    position: relative;
+    z-index: 1;
     &__text {
       color: rgba($white, .7);
       margin: 0;
@@ -23,12 +25,10 @@
     &__phone {
       position: relative;
       width: 1480px;
-      z-index: -1;
       & img {
         position: absolute;
         left: -570px;
         top: -426px;
-        z-index: 1;
       }
     }
     &__wrapper {

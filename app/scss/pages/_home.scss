@@ -2,7 +2,9 @@
   position: relative;
   padding: 100px 0;
   padding-bottom: 400px;
-  background: $background;
+  background: 
+  linear-gradient(360deg, #020F1E 3.99%, rgba(2, 15, 30, 0.13) 26.54%, rgba(255, 255, 255, 0) 98.34%), 
+  image('main-starry-sky.png');
   &__sl-logo {
     margin-top: 120px;
   }
