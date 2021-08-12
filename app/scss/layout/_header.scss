@@ -15,7 +15,10 @@
 	}
 	&-logo {
 		height: 100%;
-		@include flex(row, center);	
+		@include flex(row, center);
+		&__link {
+			@include flex();
+		}
 	}
 }
 
