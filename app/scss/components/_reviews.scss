@@ -26,6 +26,11 @@
     }
     &__rate {
       margin-bottom: 13px;
+      height: 25px;
+      background: icon('yellow-star.svg') left center space;
+      &_five {
+        width: 126px;
+      }
     }
     &__item {
       padding: 25px 50px;

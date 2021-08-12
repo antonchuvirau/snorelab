@@ -1,6 +1,7 @@
 .advantages {
   position: relative;
   padding-top: 121px;
+  background: $background;
   &-note {
     max-width: 640px;
     &__text {
@@ -30,8 +31,14 @@
         z-index: 1;
       }
     }
+    &__wrapper {
+      position: relative;
+      z-index: 0;
+    }
   }
   &-list {
+    position: relative;
+    z-index: 0;
     @include flex(column);
     &__note {
       max-width: 330px;
@@ -97,6 +104,8 @@
   }
   &-sg {
     margin-top: 87px;
+    position: relative;
+    z-index: 3;
     &__item {
       &:nth-child(1n) {
         margin-left: 0;

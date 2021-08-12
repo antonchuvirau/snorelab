@@ -16,7 +16,9 @@
     @include flex(row, center, flex-end);
     height: 100%;
     &-btn {
-      margin-right: 12px;
+      position: fixed;
+      top: 36px;
+      right: 29px;
       width: 24px;
       height: 24px;
     }

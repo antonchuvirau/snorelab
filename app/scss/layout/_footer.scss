@@ -2,10 +2,9 @@
   background: $background;
   padding-top: 52px;
   padding-bottom: 22px;
-  position: relative;
   &__wrapper {
     position: relative;
-    z-index: 2;
+    z-index: 0;
   }
   &__note {
     max-width: 290px;
@@ -27,6 +26,10 @@
         transform: rotate(-19deg);
       }
     }
+  }
+  &__logo {
+    display: inline-block;
+    max-height: 47px;
   }
   &__social {
     @include flex();
@@ -54,6 +57,9 @@
     }
     &__link {
       color: $gray-100;
+      &::before {
+        opacity: .5;
+      }
     }
   }
   &__download {

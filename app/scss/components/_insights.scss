@@ -12,8 +12,6 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1fr;
     grid-gap: 10px;
-    position: relative;
-    z-index: 2;
   }
   &-item {
     padding: 44px 30px;
