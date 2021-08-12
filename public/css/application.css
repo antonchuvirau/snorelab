@@ -4068,7 +4068,7 @@ a {
     .m-menu__close-btn {
       position: fixed;
       top: 36px;
-      right: 29px;
+      right: 35px;
       width: 24px;
       height: 24px; }
   .m-menu__logo-link {
@@ -4534,6 +4534,8 @@ a {
     padding-bottom: 0;
     background: url("../img/m-main-starry-sky.png") no-repeat 50%;
     background-position: 0 -70px; }
+  .main-decorative__wrapper {
+    min-height: 740px; }
   .main-decorative__blur-star {
     top: 180px;
     right: 50px; }
