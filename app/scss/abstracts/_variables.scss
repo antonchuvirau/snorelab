@@ -3,10 +3,22 @@
 // -----------------------------------------------------------------------------
 
 // Base
-$font: '';
-$base-font-size: 16px;
+$font: 'Proxima Nova', 'Arial', sans-serif;
+$base-font-size: 18px;
 $base-path: '../';
 
 // Colors
-$white: #fff;
-$black: #222;
+$white: #FFF;
+$black: #000;
+$gray-100: #E9E9E9;
+$gray-500: #C4C4C4;
+$blue-900: #17A2FF;
+$background: #020F1E;
+$icon-bg: #2DA6DD;
+
+// Font fades
+$font-light: #8FAEEA;
+$font-blue: #1D66A7;
+
+// Gradients
+$sg-icon-bg: linear-gradient(0deg, #01BBE0 3%, #6ECDE0 108.67%);

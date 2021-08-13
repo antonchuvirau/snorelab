@@ -1,0 +1,27 @@
+.main {
+  &-decorative {
+    &__wrapper {
+      position: relative;
+    }
+    &__blur {
+      &-star {
+        position: absolute;
+        top: -50px;
+        right: -220px;
+        & svg {
+          transform: rotate(-18.74deg);
+          filter: blur(300px);
+        }
+      }
+    }
+    &__phones {
+      position: absolute;
+      top: -54px;
+      right: -96px;
+      min-height: 470px;
+    }
+  }
+  &-how-works {
+    background: image('main-starry-sky.png') 50%;
+  }
+}

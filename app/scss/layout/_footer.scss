@@ -1,0 +1,82 @@
+.footer {
+  background: $background;
+  padding-top: 52px;
+  padding-bottom: 22px;
+  &__wrapper {
+    position: relative;
+    z-index: 0;
+  }
+  &__note {
+    max-width: 290px;
+    margin: 18px 0;
+    margin-bottom: 28px;
+    color: rgba($gray-100, .7);
+  }
+  &__blur {
+    position: absolute;
+    &-1 {
+      top: -460px;
+      left: -150px;
+    }
+    &-2 {
+      filter: blur(300px);
+      top: -260px;
+      left: -180px;
+      & svg {
+        transform: rotate(-19deg);
+      }
+    }
+  }
+  &__logo {
+    display: inline-block;
+    max-height: 47px;
+  }
+  &__social {
+    @include flex();
+    &-icon {
+      background: rgba($white, .05);
+      border-radius: 10px;
+      width: 60px;
+      height: 60px;
+      display: grid;
+      place-items: center;
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  }
+  &-list {
+    &__title {
+      font-weight: 700;
+      letter-spacing: -.01em;
+      margin-bottom: 25px;
+      color: $gray-100;
+    }
+    &__item:not(:last-child) {
+      margin-bottom: 10px;
+    }
+    &__link {
+      color: $gray-100;
+      &::before {
+        opacity: .5;
+      }
+    }
+  }
+  &__download {
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    & a {
+      margin: 0;
+      margin-bottom: 10px;
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+  &__rights {
+    margin: 0;
+    margin-top: 88px;
+    color: $gray-100;
+  }
+}

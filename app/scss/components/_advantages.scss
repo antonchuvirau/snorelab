@@ -1,0 +1,118 @@
+.advantages {
+  position: relative;
+  padding-top: 121px;
+  background: $background;
+  &-note {
+    max-width: 640px;
+    position: relative;
+    z-index: 1;
+    &__text {
+      color: rgba($white, .7);
+      margin: 0;
+      margin-top: 31px;
+    }
+  }
+  &-decorative {
+    &__blur-star {
+      position: absolute;
+      top: 820px;
+      right: -410px;
+      & svg {
+        filter: blur(130px);
+        transform: rotate(45deg);
+      }
+    }
+    &__phone {
+      position: relative;
+      width: 1480px;
+      & img {
+        position: absolute;
+        left: -570px;
+        top: -426px;
+      }
+    }
+    &__wrapper {
+      position: relative;
+      z-index: 0;
+    }
+  }
+  &-list {
+    position: relative;
+    z-index: 0;
+    @include flex(column);
+    &__note {
+      max-width: 330px;
+      position: relative;
+      z-index: 1;
+      &::before {
+        content: '';
+        position: absolute;
+        top: -8px;
+        right: calc(100% + 30px);
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+      }
+      &[data-header="Effective algorithms"]::before {
+        background: $icon-bg icon('svgrepo/speed-meter.svg') no-repeat 50%;
+      }
+      &[data-header="Clear Recordings"]::before {
+        background: $icon-bg icon('svgrepo/record-voice-button.svg') no-repeat 50%;
+      }
+      &[data-header="Easy to Use"]::before {
+        background: $icon-bg icon('svgrepo/hand.svg') no-repeat 50%;
+      }
+      &[data-header="Discover Solutions"]::before {
+        background: $icon-bg icon('svgrepo/hand-holding-up-a-bulb.svg') no-repeat 50%;
+      }
+      &[data-header="Trends Area"]::before {
+        background: $icon-bg icon('svgrepo/magic-starred-wand.svg') no-repeat 50%;
+      }
+      &[data-header="Doctor Recommended"]::before {
+        background: $icon-bg icon('svgrepo/add-to-favourites.svg') no-repeat 50%;
+      }
+      &[data-header="Work into your daily routine"]::before {
+        background: icon('svgrepo/three-oclock.svg') no-repeat 50%, $sg-icon-bg;
+      }
+      &[data-header="Easy-to-follow animations"]::before {
+        background: icon('svgrepo/play-movie-button-with-a-triangle-in-a-circle.svg') no-repeat 50%, $sg-icon-bg;
+      }
+      &[data-header="Hints and tips"]::before {
+        background: icon('svgrepo/tiny-star.svg') no-repeat 50%, $sg-icon-bg;
+      }
+      &[data-header="Proven snoring-reduction technique"]::before {
+        background: icon('svgrepo/atomic-science.svg') no-repeat 50%, $sg-icon-bg;
+      }
+    }
+    &__item {
+      background: rgba($white, .05);
+      padding: 38px 40px 39px 120px;
+      border-radius: 10px;
+      z-index: 1;
+      &:not(:last-child) {
+        margin-bottom: 19px;
+      }
+      &:nth-child(2n-1) {
+        margin-left: auto;
+      }
+    }
+    &__text {
+      color: rgba($white, .7);
+      margin: 0;
+      margin-top: 4px;
+    }
+  }
+  &-sg {
+    margin-top: 87px;
+    position: relative;
+    z-index: 3;
+    &__item {
+      &:nth-child(1n) {
+        margin-left: 0;
+      }
+      &:nth-child(2n) {
+        margin-left: auto;
+      }
+    }
+  }
+}

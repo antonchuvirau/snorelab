@@ -1,0 +1,9 @@
+.btn {
+  display: inline-block;
+  background: rgba($white, .05);
+  border-radius: 10px;
+  padding: .625em 1.375em;
+  color: $blue-900;
+  @include full_font(2.4rem, 1.25, 700);
+  text-align: center;
+}

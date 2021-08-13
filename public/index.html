@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Snorelab | Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="format-detection" content="telephone=no">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="" sizes="16x16">
+    <link rel="icon" type="image/png" href="" sizes="32x32">
+    <link rel="icon" type="image/png" href="" sizes="96x96">
+    <link rel="apple-touch-icon" sizes="152x152" href="">
+    <!-- favicon -->
+    <link href="css/application.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Begin header -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-8 col-xl-5">
+					<div class="header-logo">
+						<a class="header-logo__link" href="index.html">
+							<svg width="172" height="47" viewBox="0 0 172 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24.6961 32.0455C24.5786 32.0455 24.4633 32.0113 24.3633 31.9467C24.2632 31.882 24.1823 31.7896 24.1296 31.6796L21.2358 25.6455L20.0743 28.0714C20.0216 28.1814 19.9407 28.2739 19.8407 28.3385C19.7406 28.4031 19.6254 28.4373 19.5078 28.4373H15.6098C15.4489 28.4396 15.2929 28.379 15.1722 28.2674C15.0516 28.1558 14.975 28.0012 14.9573 27.8337C14.9492 27.7417 14.9595 27.6488 14.9877 27.5612C15.0159 27.4736 15.0613 27.3931 15.121 27.3249C15.1806 27.2567 15.2532 27.2024 15.3342 27.1653C15.4151 27.1282 15.5025 27.1093 15.5908 27.1097H19.116L20.6693 23.8674C20.7219 23.757 20.8028 23.6642 20.9029 23.5993C21.0031 23.5344 21.1186 23.5 21.2364 23.5C21.3542 23.5 21.4696 23.5344 21.5698 23.5993C21.67 23.6642 21.7509 23.757 21.8034 23.8674L24.6967 29.9015L25.8582 27.4756C25.9108 27.3656 25.9917 27.2732 26.0916 27.2086C26.1916 27.144 26.3067 27.1097 26.4242 27.1097H30.3205C30.4815 27.1069 30.6377 27.1671 30.7587 27.2784C30.8796 27.3896 30.9566 27.5441 30.9747 27.7116C30.9827 27.8036 30.9723 27.8964 30.944 27.9839C30.9158 28.0715 30.8704 28.1519 30.8108 28.22C30.7511 28.2881 30.6785 28.3425 30.5977 28.3795C30.5168 28.4165 30.4294 28.4355 30.3411 28.4351H26.8175L25.2626 31.6796C25.2099 31.7896 25.129 31.882 25.029 31.9467C24.9289 32.0113 24.8137 32.0455 24.6961 32.0455Z" fill="white" stroke="white" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M32.1464 36.3182H13.7859C12.2073 36.3182 10.8288 35.4839 10.0978 34.0866C9.73927 33.417 9.57438 32.661 9.62154 31.9032C9.6687 31.1453 9.92605 30.4155 10.3648 29.7954L18.8112 17.6112V13.2423C18.3001 13.1037 17.8494 12.7999 17.5295 12.3785C17.2097 11.957 17.0388 11.4416 17.0435 10.9129C17.0559 9.59588 18.1591 8.54546 19.4783 8.54546H26.4534C27.7726 8.54546 28.8764 9.59331 28.8882 10.9129C28.893 11.4416 28.722 11.957 28.4022 12.3785C28.0824 12.7999 27.6316 13.1037 27.1205 13.2423V17.6112L35.5669 29.7954C36.0056 30.4155 36.263 31.1453 36.3103 31.9031C36.3575 32.6609 36.1928 33.4169 35.8345 34.0866C35.1034 35.4839 33.7244 36.3182 32.1464 36.3182ZM19.3613 9.78425C19.1885 9.78439 19.0179 9.82295 18.8619 9.89713C18.7059 9.97131 18.5684 10.0792 18.4594 10.2131C18.3504 10.347 18.2726 10.5034 18.2317 10.671C18.1908 10.8386 18.1879 11.0132 18.223 11.1821C18.3318 11.7235 18.8251 12.1028 19.3783 12.1028H19.5546C19.6856 12.1028 19.8112 12.1547 19.9038 12.2472C19.9965 12.3397 20.0485 12.4651 20.0485 12.5958V18.0116L11.4134 30.4665C10.7767 31.3846 10.6891 32.5884 11.2257 33.5683C11.4738 34.0304 11.8439 34.4157 12.2959 34.6826C12.7479 34.9494 13.2644 35.0875 13.7895 35.082H32.0876C33.212 35.082 34.2595 34.4644 34.7601 33.4603C34.997 32.9949 35.1022 32.4737 35.0643 31.9531C35.0264 31.4324 34.8469 30.9319 34.5451 30.5056L25.8817 18.0116V12.5958C25.8817 12.4651 25.9337 12.3397 26.0263 12.2472C26.119 12.1547 26.2446 12.1028 26.3756 12.1028H26.489C27.0421 12.1028 27.5355 11.7235 27.6443 11.1821C27.6794 11.0132 27.6764 10.8387 27.6356 10.6711C27.5947 10.5035 27.517 10.3471 27.4081 10.2133C27.2991 10.0795 27.1617 9.97151 27.0057 9.89729C26.8498 9.82308 26.6793 9.78446 26.5065 9.78425H19.3613Z" fill="white" stroke="white" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M16.6643 2.1325C16.485 1.57191 15.8841 1.26051 15.3322 1.46508C12.1703 2.63713 9.29344 4.47761 6.90054 6.86546C4.25586 9.50456 2.27855 12.7362 1.13262 16.2923C-0.013304 19.8485 -0.294814 23.6266 0.311444 27.3133C0.917703 30.9999 2.39425 34.4889 4.61862 37.4908C6.84298 40.4927 9.75104 42.921 13.1016 44.5742C16.4521 46.2274 20.1485 47.0579 23.8842 46.9969C27.6199 46.9358 31.2872 45.9848 34.5819 44.223C37.5629 42.6288 40.1612 40.4124 42.2029 37.7285C42.5593 37.2601 42.4363 36.5946 41.9522 36.2599C41.4681 35.9251 40.8063 36.048 40.4478 36.5148C38.6003 38.9207 36.2589 40.9091 33.5768 42.3434C30.5809 43.9455 27.2463 44.8101 23.8494 44.8657C20.4525 44.9212 17.0913 44.1661 14.0447 42.6628C10.9981 41.1595 8.35377 38.9515 6.33116 36.2219C4.30854 33.4922 2.96592 30.3197 2.41465 26.9674C1.86337 23.6151 2.11935 20.1797 3.16134 16.9461C4.20333 13.7125 6.0013 10.7739 8.40611 8.37421C10.5591 6.22576 13.1429 4.56462 15.9825 3.49746C16.5334 3.29039 16.8436 2.6931 16.6643 2.1325Z" fill="white"/>
+                                <path d="M56.372 32.836C53.1613 32.836 50.632 31.8467 48.784 29.868L50.604 27.348C52.2093 29.0653 54.1787 29.924 56.512 29.924C57.7627 29.924 58.696 29.672 59.312 29.168C59.9467 28.664 60.264 28.0667 60.264 27.376C60.264 26.6667 59.8907 26.1067 59.144 25.696C58.3973 25.2667 57.492 24.9307 56.428 24.688C55.364 24.4453 54.2907 24.156 53.208 23.82C52.144 23.484 51.2387 22.9147 50.492 22.112C49.7453 21.3093 49.372 20.2733 49.372 19.004C49.372 17.436 49.9973 16.1387 51.248 15.112C52.5173 14.0667 54.16 13.544 56.176 13.544C59.0507 13.544 61.384 14.412 63.176 16.148L61.3 18.584C59.8813 17.1653 58.08 16.456 55.896 16.456C54.9253 16.456 54.1507 16.6707 53.572 17.1C53.012 17.5107 52.732 18.0707 52.732 18.78C52.732 19.2467 52.928 19.6387 53.32 19.956C53.7307 20.2733 54.2533 20.5347 54.888 20.74C55.5227 20.9267 56.2227 21.1133 56.988 21.3C57.772 21.4867 58.5467 21.72 59.312 22C60.096 22.2613 60.8053 22.588 61.44 22.98C62.0747 23.372 62.588 23.9133 62.98 24.604C63.3907 25.2947 63.596 26.116 63.596 27.068C63.596 28.748 62.9893 30.1293 61.776 31.212C60.5627 32.2947 58.7613 32.836 56.372 32.836ZM79.157 32.5H76.217V24.044C76.217 22.1773 75.3117 21.244 73.501 21.244C72.7917 21.244 72.129 21.4213 71.513 21.776C70.897 22.1307 70.4023 22.56 70.029 23.064V32.5H67.089V18.976H70.029V20.824C70.533 20.2267 71.205 19.7133 72.045 19.284C72.885 18.8547 73.7997 18.64 74.789 18.64C76.2263 18.64 77.309 19.0133 78.037 19.76C78.7837 20.5067 79.157 21.58 79.157 22.98V32.5ZM89.6397 32.836C87.5491 32.836 85.8691 32.1547 84.5997 30.792C83.3304 29.4107 82.6957 27.7213 82.6957 25.724C82.6957 23.7267 83.3304 22.0467 84.5997 20.684C85.8691 19.3213 87.5491 18.64 89.6397 18.64C91.7491 18.64 93.4384 19.3213 94.7077 20.684C95.9771 22.0467 96.6117 23.7267 96.6117 25.724C96.6117 27.74 95.9771 29.4293 94.7077 30.792C93.4384 32.1547 91.7491 32.836 89.6397 32.836ZM89.6397 30.232C90.8531 30.232 91.8051 29.8027 92.4957 28.944C93.2051 28.0667 93.5597 26.9933 93.5597 25.724C93.5597 24.4733 93.2051 23.4187 92.4957 22.56C91.8051 21.6827 90.8531 21.244 89.6397 21.244C88.4451 21.244 87.4931 21.6827 86.7837 22.56C86.0931 23.4187 85.7477 24.4733 85.7477 25.724C85.7477 26.9933 86.0931 28.0667 86.7837 28.944C87.4931 29.8027 88.4451 30.232 89.6397 30.232ZM103.087 32.5H100.147V18.976H103.087V20.964C103.609 20.292 104.263 19.7413 105.047 19.312C105.831 18.8827 106.643 18.668 107.483 18.668V21.58C107.221 21.524 106.913 21.496 106.559 21.496C105.943 21.496 105.28 21.6827 104.571 22.056C103.88 22.4107 103.385 22.8213 103.087 23.288V32.5ZM116.658 32.836C114.604 32.836 112.906 32.1827 111.562 30.876C110.236 29.5507 109.574 27.8333 109.574 25.724C109.574 23.7453 110.218 22.0747 111.506 20.712C112.812 19.3307 114.455 18.64 116.434 18.64C118.431 18.64 120.036 19.3307 121.25 20.712C122.482 22.0933 123.098 23.8573 123.098 26.004V26.704H112.654C112.766 27.768 113.204 28.6547 113.97 29.364C114.735 30.0733 115.734 30.428 116.966 30.428C117.656 30.428 118.347 30.2973 119.038 30.036C119.747 29.7747 120.335 29.4107 120.802 28.944L122.146 30.876C120.783 32.1827 118.954 32.836 116.658 32.836ZM120.242 24.632C120.204 23.6987 119.859 22.868 119.206 22.14C118.571 21.412 117.647 21.048 116.434 21.048C115.276 21.048 114.371 21.412 113.718 22.14C113.064 22.8493 112.7 23.68 112.626 24.632H120.242ZM138.151 32.5H126.643V13.824H129.919V29.616H138.151V32.5ZM152.511 32.5H149.571V31.044C148.526 32.2387 147.07 32.836 145.203 32.836C143.971 32.836 142.879 32.444 141.927 31.66C140.975 30.8573 140.499 29.756 140.499 28.356C140.499 26.9187 140.966 25.8267 141.899 25.08C142.851 24.3333 143.952 23.96 145.203 23.96C147.126 23.96 148.582 24.5387 149.571 25.696V23.68C149.571 22.896 149.282 22.28 148.703 21.832C148.124 21.384 147.359 21.16 146.407 21.16C144.895 21.16 143.56 21.7293 142.403 22.868L141.199 20.824C142.73 19.368 144.624 18.64 146.883 18.64C148.544 18.64 149.898 19.032 150.943 19.816C151.988 20.6 152.511 21.8413 152.511 23.54V32.5ZM146.351 30.82C147.826 30.82 148.899 30.3533 149.571 29.42V27.376C148.899 26.4427 147.826 25.976 146.351 25.976C145.511 25.976 144.82 26.2 144.279 26.648C143.738 27.096 143.467 27.684 143.467 28.412C143.467 29.14 143.738 29.728 144.279 30.176C144.82 30.6053 145.511 30.82 146.351 30.82ZM159.823 28.44C160.14 28.944 160.625 29.3733 161.279 29.728C161.951 30.064 162.623 30.232 163.295 30.232C164.452 30.232 165.376 29.8213 166.067 29C166.776 28.16 167.131 27.0773 167.131 25.752C167.131 24.4267 166.776 23.344 166.067 22.504C165.376 21.664 164.452 21.244 163.295 21.244C162.623 21.244 161.96 21.4213 161.307 21.776C160.653 22.1307 160.159 22.5693 159.823 23.092V28.44ZM159.823 32.5H156.883V13.824H159.823V20.852C160.924 19.3773 162.371 18.64 164.163 18.64C165.917 18.64 167.355 19.2933 168.475 20.6C169.595 21.888 170.155 23.6053 170.155 25.752C170.155 27.936 169.595 29.6627 168.475 30.932C167.355 32.2013 165.917 32.836 164.163 32.836C162.389 32.836 160.943 32.108 159.823 30.652V32.5Z" fill="white"/>
+                            </svg>                                
+						</a>
+					</div>
+				</div>
+                <div class="col-4 d-xl-none">
+                    <div class="m-options">
+						<button type="button" class="m-options__menu-btn"></button>
+					</div>
+                </div>
+                <div class="d-none d-xl-block col-xl-7">
+					<nav class="header-navigation">
+						<ul class="header-navigation__list">
+							<li class="header-navigation__item" active>
+                                <a href="#">How SnoreLab Works</a>
+                            </li>
+							<li class="header-navigation__item">
+                                <a href="#">Insights</a>
+                            </li>
+							<li class="header-navigation__item">
+                                <a href="#">Remedy Shop</a>
+                            </li>
+							<li class="header-navigation__item">
+                                <a href="#">FAQ</a>
+                            </li>
+							<li class="header-navigation__item">
+                                <a href="#">Reviews</a>
+                            </li>
+							<li class="header-navigation__item">
+                                <a href="#">Contact Us</a>
+                            </li>
+						</ul>
+					</nav>
+				</div>
+            </div>
+        </div>
+    </header>
+    <!-- End header -->
+    <!-- Begin main -->
+    <main class="main ox-hidden main-how-works">
+        <section class="home-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-5">
+                        <div class="home-main__sl-logo">
+                            <img src="img/icons/sl-mobile-logo.png" srcset="img/icons/sl-mobile-logo.png 1x, img/icons/sl-mobile-logo@2x.png 2x" alt="Snorelab mobile logo">
+                        </div>
+                        <h1 class="title title_size-l fade-title home-main__title">
+                            SnoreLab: Record&nbsp;Your Snoring
+                        </h1>
+                        <p class="home-main__note">
+                            SnoreLab is the No.1 iOS and Android app for recording and tracking snoring and discovering solutions.
+                        </p>
+                        <div class="download-block home-main__download">
+                            <a href="#" class="download-block__link" data-client="Google Play">
+                                <img src="img/icons/google-play.png" srcset="img/icons/google-play.png 1x, img/icons/google-play@2x.png 2x" alt="Google Play">
+                            </a>
+                            <a href="#" class="download-block__link" data-client="App Store">
+                                <img src="img/icons/app-store.png" srcset="img/icons/app-store.png 1x, img/icons/app-store@2x.png 2x" alt="App Store">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-7">
+                        <div class="main-decorative__wrapper">
+                            <div class="main-decorative__blur-star">
+                                <svg width="781" height="759" viewBox="0 0 821 829" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M435.561 0.809395L538.333 317.108L870.909 317.108L601.849 512.591L704.621 828.89L435.561 633.407L166.501 828.89L269.273 512.591L0.213348 317.108L332.789 317.108L435.561 0.809395Z" fill="url(#paint0_linear)"/>
+                                    <defs>
+                                        <linearGradient id="paint0_linear" x1="449.002" y1="418.383" x2="75.568" y2="257.443" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#1F12D3"/>
+                                            <stop offset="1" stop-color="#3FAFDE"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="main-decorative__phones">
+                                <img src="img/sl-decorative-phones.png" srcset="img/sl-decorative-phones.png 1x, img/sl-decorative-phones@2x.png 2x" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="advantages">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-7">
+                        <div class="advantages-note">
+                            <h2 class="title title_size-m fade-title advantages-note__title">The Snoring Management App for iOS and Android</h2>
+                            <p class="advantages-note__text">SnoreLab has helped millions of people to&nbsp;understand their snoring problem and&nbsp;to&nbsp;discover solutions to improve their sleep.</p>
+                        </div> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-5 col-xl-6">
+                        <div class="advantages-decorative__wrapper">
+                            <div class="advantages-decorative__phone">
+                                <img class="d-none d-xl-inline" src="img/sl-decorative-phone.png" srcset="img/sl-decorative-phone.png 1x, img/sl-decorative-phone@2x.png 2x" alt="">
+                                <img class="d-xl-none" src="img/m-sl-decorative-phone.png" srcset="img/m-sl-decorative-phone.png 1x, img/m-sl-decorative-phone@2x.png 2x" alt="">
+                            </div>
+                        </div>
+                        <div class="advantages-decorative__blur-star">
+                            <svg width="950" height=950" viewBox="0 0 950 950" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M435.561 0.809395L538.333 317.108L870.909 317.108L601.849 512.591L704.621 828.89L435.561 633.407L166.501 828.89L269.273 512.591L0.213348 317.108L332.789 317.108L435.561 0.809395Z" fill="#035A95"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-7 col-xl-6">
+                        <ul class="advantages-list">
+                            <li class="advantages-list__item">
+                                <div class="advantages-list__note" data-header="Effective algorithms">
+                                    <h3 class="title card-title advantages-list__title">Effective algorithms</h3>
+                                    <p class="advantages-list__text">SnoreLab gives measurements of snoring intensity and duration. How high is your Snore Score? Try and reduce it!</p>
+                                </div>
+                            </li>
+                            <li class="advantages-list__item">
+                                <div class="advantages-list__note" data-header="Clear Recordings">
+                                    <h3 class="title card-title advantages-list__title">Clear Recordings</h3>
+                                    <p class="advantages-list__text">Tap the chart to hear samples of your snoring or optionally record the whole night to hear every breath.</p>
+                                </div>
+                            </li>
+                            <li class="advantages-list__item">
+                                <div class="advantages-list__note" data-header="Easy to Use">
+                                    <h3 class="title card-title advantages-list__title">Easy to Use</h3>
+                                    <p class="advantages-list__text">Simply press start and place the device next to your bed. No calibration is required. SnoreLab has monitored more than 20 million nights of sleep!</p>
+                                </div>
+                            </li> 
+                            <li class="advantages-list__item"> 
+                                <div class="advantages-list__note" data-header="Discover Solutions">
+                                    <h3 class="title card-title advantages-list__title">Discover Solutions</h3>
+                                    <p class="advantages-list__text">The app contains information on snoring remedy options and factors that influence snoring. We've helped hundreds of thousands of users reduce their snoring.</p>
+                                </div>
+                            </li>
+                            <li class="advantages-list__item">
+                                <div class="advantages-list__note" data-header="Trends Area">
+                                    <h3 class="title card-title advantages-list__title">Trends Area</h3>
+                                    <p class="advantages-list__text">Compare your snoring over time and evaluate the effective of remedies and lifestyle changes.</p>
+                                </div>
+                            </li>
+                            <li class="advantages-list__item">
+                                <div class="advantages-list__note" data-header="Doctor Recommended">
+                                    <h3 class="title card-title advantages-list__title">Doctor Recommended</h3>
+                                    <p class="advantages-list__text">Many doctors, dentists and sleep professionals encourage their patients to use SnoreLab to assist their consultations and to measure the success of treatments.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews">
+            <h2 class="title title_size-m fade-title reviews__title">App User Reviews</h2>
+            <div class="reviews__content">
+                <ul class="reviews-list">
+                    <li class="reviews-list__item">
+                        <div class="reviews-list__rate reviews-list__rate_five"></div>
+                        <p class="reviews-list__text">SnoreLab has helped me track my snoring problem and to realize that it was a weight issue and now I have successfully stopped snoring with some weight loss and constant monitoring from SnoreLab.</p>
+                        <div class="reviews-list__person">
+                            <img src="img/icons/people/person-1.png" srcset="img/icons/people/person-1.png 1x, img/icons/people/person-1@2x.png 2x" alt="Reviewer's picture">
+                            <h4 class="title reviews-list__item-title">Inspired me to loose weight</h4>
+                        </div>
+                    </li>
+                    <li class="reviews-list__item">
+                        <div class="reviews-list__rate reviews-list__rate_five"></div>
+                        <p class="reviews-list__text">SnoreLab has helped me track my snoring problem and to realize that it was a weight issue and now I have successfully stopped snoring with some weight loss and constant monitoring from SnoreLab.</p>
+                        <div class="reviews-list__person">
+                            <img src="img/icons/people/person-1.png" srcset="img/icons/people/person-1.png 1x, img/icons/people/person-1@2x.png 2x" alt="Reviewer's picture">
+                            <h4 class="title reviews-list__item-title">Inspired me to loose weight</h4>
+                        </div>
+                    </li>
+                    <li class="reviews-list__item">
+                        <div class="reviews-list__rate reviews-list__rate_five"></div>
+                        <p class="reviews-list__text">This must be one of the best apps out there. Totally brilliant and so simple to use. It’s very odd hearing yourself…and what others hear…but cannot recommend this app enough. A million gold stars!!</p>
+                        <div class="reviews-list__person">
+                            <img src="img/icons/people/person-2.png" srcset="img/icons/people/person-2.png 1x, img/icons/people/person-2@2x.png 2x" alt="Reviewer's picture">
+                            <h4 class="title reviews-list__item-title">Snore tastic!</h4>
+                        </div>
+                    </li>
+                    <li class="reviews-list__item">
+                        <div class="reviews-list__rate reviews-list__rate_five"></div>
+                        <p class="reviews-list__text">This app may have literally saved my life. My wife and daughter told me for years that I made awful noises in my sleep. I downloaded this app. For the first time I could hear what I sounded like in my sleep. Absolutely horrifying. My CPAP machine is on its way. Thank you.</p>
+                        <div class="reviews-list__person">
+                            <img src="img/icons/people/person-1.png" srcset="img/icons/people/person-1.png 1x, img/icons/people/person-1@2x.png 2x" alt="Reviewer's picture">
+                            <h4 class="title reviews-list__item-title">Saved my life</h4>
+                        </div>
+                    </li>
+                    <li class="reviews-list__item">
+                        <div class="reviews-list__rate reviews-list__rate_five"></div>
+                        <p class="reviews-list__text">This app may have literally saved my life. My wife and daughter told me for years that I made awful noises in my sleep. I downloaded this app. For the first time I could hear what I sounded like in my sleep. Absolutely horrifying. My CPAP machine is on its way. Thank you.</p>
+                        <div class="reviews-list__person">
+                            <img src="img/icons/people/person-1.png" srcset="img/icons/people/person-1.png 1x, img/icons/people/person-1@2x.png 2x" alt="Reviewer's picture">
+                            <h4 class="title reviews-list__item-title">Saved my life</h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="reviews__pagination-wrapper">
+                <div class="reviews__pagination">
+                    <span class="reviews__pagination-bullet" tabindex="0" aria-alabel="Go to slide 1"></span>
+                    <span class="reviews__pagination-bullet" tabindex="0" aria-alabel="Go to slide 2"></span>
+                    <span class="reviews__pagination-bullet reviews__pagination-bullet_active" tabindex="0" aria-alabel="Go to slide 3"></span>
+                    <span class="reviews__pagination-bullet" tabindex="0" aria-alabel="Go to slide 4"></span>
+                    <span class="reviews__pagination-bullet" tabindex="0" aria-alabel="Go to slide 5"></span>
+                </div>
+            </div>
+        </section>
+        <section class="partner-app">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="partner-app__app-wrapper">
+                            <h2 class="title title_size-m partner-app__title">Try our partner app</h2>
+                            <div class="partner-app__app">
+                                <svg width="461" height="90" viewBox="0 0 461 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M90 0H0V90H90V0Z" fill="url(#paint0_linear)"/>
+                                    <path d="M72.94 41.2483C70.8889 36.3247 67.5217 32.0471 63.2 28.8748C59.975 26.5535 49.035 20.2678 47.425 27.39C46.605 31.008 48.115 34.6705 49.965 37.6996C51 39.422 52 41.372 51.5 43.4755C50.545 47.2371 46.29 49.1426 42.715 47.93C39.86 46.9748 37.855 43.8962 38.525 40.9513C38.93 39.1597 40.12 37.7491 40.985 36.1702C42.425 33.5322 43.785 28.9193 42.13 26.0734C38.845 20.4064 28.24 27.5929 25.13 30.1814C21.2837 33.4387 18.3552 37.6266 16.63 42.3372C14.815 47.1529 13.69 52.6567 16.31 57.3883C16.42 57.5639 16.5938 57.6911 16.7957 57.7436C16.9975 57.7961 17.212 57.7699 17.395 57.6704C22.085 55.5372 27.15 53.899 32.355 54.9136C35.2958 55.5422 38.0706 56.7748 40.5 58.5316C41.845 59.472 43.255 60.5955 45 60.6104C46.745 60.6252 48.15 59.472 49.5 58.5316C51.8314 56.8471 54.4803 55.6421 57.29 54.9879C62.61 53.8247 67.79 55.4828 72.615 57.6655C72.7977 57.7662 73.0126 57.793 73.2148 57.7404C73.417 57.6879 73.5909 57.5599 73.7 57.3834C76.5 52.3102 75.025 46.3165 72.94 41.2483Z" fill="url(#paint1_linear)"/>
+                                    <path d="M142.725 68.9C133.825 68.9 126.775 66.25 121.575 60.95L127.35 52.85C131.65 57.35 136.95 59.6 143.25 59.6C146 59.6 148.125 59.075 149.625 58.025C151.175 56.925 151.95 55.6 151.95 54.05C151.95 52.7 151.225 51.575 149.775 50.675C148.375 49.775 146.6 49.125 144.45 48.725C142.35 48.325 140.05 47.75 137.55 47C135.05 46.25 132.725 45.4 130.575 44.45C128.475 43.5 126.7 42 125.25 39.95C123.85 37.9 123.15 35.4 123.15 32.45C123.15 28.15 124.875 24.55 128.325 21.65C131.775 18.7 136.375 17.225 142.125 17.225C150.075 17.225 156.575 19.55 161.625 24.2L155.7 32C151.75 28.35 146.9 26.525 141.15 26.525C138.9 26.525 137.15 26.975 135.9 27.875C134.65 28.775 134.025 30 134.025 31.55C134.025 32.75 134.725 33.775 136.125 34.625C137.575 35.425 139.35 36.025 141.45 36.425C143.6 36.825 145.9 37.425 148.35 38.225C150.85 38.975 153.15 39.85 155.25 40.85C157.4 41.8 159.175 43.325 160.575 45.425C162.025 47.475 162.75 49.95 162.75 52.85C162.75 57.65 161.025 61.525 157.575 64.475C154.175 67.425 149.225 68.9 142.725 68.9ZM201.421 68H191.896V46.1C191.896 41.6 189.671 39.35 185.221 39.35C181.771 39.35 179.021 40.775 176.971 43.625V68H167.446V31.775H176.971V36.5C180.121 32.75 184.346 30.875 189.646 30.875C193.546 30.875 196.471 31.9 198.421 33.95C200.421 36 201.421 38.825 201.421 42.425V68ZM239.378 63.425C235.878 67.075 231.228 68.9 225.428 68.9C219.628 68.9 214.978 67.075 211.478 63.425C208.028 59.725 206.303 55.2 206.303 49.85C206.303 44.5 208.028 40 211.478 36.35C214.978 32.7 219.628 30.875 225.428 30.875C231.228 30.875 235.878 32.7 239.378 36.35C242.878 40 244.628 44.5 244.628 49.85C244.628 55.2 242.878 59.725 239.378 63.425ZM218.678 57.425C220.328 59.425 222.578 60.425 225.428 60.425C228.278 60.425 230.528 59.425 232.178 57.425C233.878 55.375 234.728 52.85 234.728 49.85C234.728 46.9 233.878 44.425 232.178 42.425C230.528 40.375 228.278 39.35 225.428 39.35C222.578 39.35 220.328 40.375 218.678 42.425C217.028 44.425 216.203 46.9 216.203 49.85C216.203 52.85 217.028 55.375 218.678 57.425ZM258.97 68H249.445V31.775H258.97V36.725C260.32 35.025 262.045 33.625 264.145 32.525C266.245 31.425 268.37 30.875 270.52 30.875V40.175C269.87 40.025 268.995 39.95 267.895 39.95C266.295 39.95 264.595 40.35 262.795 41.15C260.995 41.95 259.72 42.925 258.97 44.075V68ZM291.246 68.9C285.646 68.9 281.021 67.15 277.371 63.65C273.721 60.15 271.896 55.55 271.896 49.85C271.896 44.5 273.646 40 277.146 36.35C280.696 32.7 285.196 30.875 290.646 30.875C296.046 30.875 300.421 32.725 303.771 36.425C307.121 40.075 308.796 44.875 308.796 50.825V52.925H281.871C282.171 55.325 283.246 57.325 285.096 58.925C286.946 60.525 289.346 61.325 292.296 61.325C293.896 61.325 295.621 61 297.471 60.35C299.371 59.7 300.871 58.825 301.971 57.725L306.171 63.875C302.521 67.225 297.546 68.9 291.246 68.9ZM299.571 46.475C299.421 44.425 298.596 42.575 297.096 40.925C295.646 39.275 293.496 38.45 290.646 38.45C287.946 38.45 285.846 39.275 284.346 40.925C282.846 42.525 281.971 44.375 281.721 46.475H299.571ZM337.876 68.975C330.376 68.975 324.051 66.575 318.901 61.775C313.801 56.975 311.251 50.725 311.251 43.025C311.251 35.275 313.801 29.025 318.901 24.275C324.051 19.525 330.376 17.15 337.876 17.15C346.976 17.15 353.876 20.875 358.576 28.325L349.726 33.125C348.526 31.225 346.876 29.675 344.776 28.475C342.726 27.225 340.426 26.6 337.876 26.6C333.326 26.6 329.576 28.15 326.626 31.25C323.676 34.35 322.201 38.275 322.201 43.025C322.201 47.775 323.676 51.7 326.626 54.8C329.576 57.9 333.326 59.45 337.876 59.45C339.976 59.45 342.001 59.075 343.951 58.325C345.901 57.575 347.426 56.675 348.526 55.625V49.625H335.326V40.325H359.176V59.525C353.526 65.825 346.426 68.975 337.876 68.975ZM363.881 82.175L365.306 73.625C366.206 74.025 367.206 74.225 368.306 74.225C370.856 74.225 372.531 73.35 373.331 71.6L374.681 68.525L359.981 31.775H370.181L379.631 56.975L389.081 31.775H399.356L382.331 73.925C381.081 77.125 379.331 79.35 377.081 80.6C374.831 81.9 372.006 82.6 368.606 82.7C366.856 82.7 365.281 82.525 363.881 82.175ZM455.883 68H446.283V45.125C446.283 41.275 444.483 39.35 440.883 39.35C439.333 39.35 437.883 39.775 436.533 40.625C435.233 41.475 434.183 42.45 433.383 43.55V68H423.783V45.125C423.783 41.275 421.983 39.35 418.383 39.35C416.883 39.35 415.458 39.775 414.108 40.625C412.758 41.475 411.683 42.475 410.883 43.625V68H401.358V31.775H410.883V36.5C411.783 35.2 413.358 33.95 415.608 32.75C417.858 31.5 420.233 30.875 422.733 30.875C427.983 30.875 431.333 33.075 432.783 37.475C433.933 35.675 435.633 34.125 437.883 32.825C440.183 31.525 442.633 30.875 445.233 30.875C448.633 30.875 451.258 31.8 453.108 33.65C454.958 35.45 455.883 38.175 455.883 41.825V68Z" fill="url(#paint2_linear)"/>
+                                    <defs>
+                                    <linearGradient id="paint0_linear" x1="45" y1="0" x2="45" y2="90" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#012128"/>
+                                    <stop offset="1" stop-color="#00323C"/>
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear" x1="45.005" y1="59.5116" x2="45.005" y2="20.7726" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#01BBE0"/>
+                                    <stop offset="1" stop-color="#6ECDE0"/>
+                                    </linearGradient>
+                                    <linearGradient id="paint2_linear" x1="196.495" y1="80" x2="412.154" y2="80" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#01BBE0"/>
+                                    <stop offset="1" stop-color="#E3F9FE"/>
+                                    </linearGradient>
+                                    </defs>
+                                </svg>                                                                                                                        
+                            </div>
+                            <p class="partner-app__note">Reduce your snoring with  exercises for quiet sleep.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-6 order-2 order-lg-1">
+                        <ul class="advantages-list advantages-sg">
+                            <li class="advantages-list__item advantages-sg__item">
+                                <div class="advantages-list__note" data-header="Work into your daily routine">
+                                    <h3 class="title card-title advantages-list__title">Work into your daily routine</h3>
+                                    <p class="advantages-list__text">SnoreGym’s quick 5,&nbsp;10&nbsp;or&nbsp;15&nbsp;minute workouts can be easily integrated into your daily routine.</p>
+                                </div>
+                            </li>
+                            <li class="advantages-list__item advantages-sg__item">
+                                <div class="advantages-list__note" data-header="Easy-to-follow animations">
+                                    <h3 class="title card-title advantages-list__title">Easy-to-follow animations</h3>
+                                    <p class="advantages-list__text">SnoreGym guides you throught each exercise with real-time animations.</p>
+                                </div>
+                            </li>
+                            <li class="advantages-list__item advantages-sg__item">
+                                <div class="advantages-list__note" data-header="Hints and tips">
+                                    <h3 class="title card-title advantages-list__title">Hints and tips</h3>
+                                    <p class="advantages-list__text">Get the most out of your workout with handy tips.</p>
+                                </div>
+                            </li>
+                            <li class="advantages-list__item advantages-sg__item">
+                                <div class="advantages-list__note" data-header="Proven snoring-reduction technique">
+                                    <h3 class="title card-title advantages-list__title">Proven snoring-reduction technique</h3>
+                                    <p class="advantages-list__text">Multiple scentific studies have shown that mouth exercises are an&nbsp;effective way to manage snoring and sleep apnea.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-6 order-1 order-lg-2">
+                        <div class="partner-app__decorative-wrapper">
+                            <div class="advantages-decorative__wrapper partner-app__decorative">
+                                <div class="partner-app__decorative-phones">
+                                    <img src="img/sg-decorative-phones.png" srcset="img/sg-decorative-phones.png 1x, img/sg-decorative-phones@2x.png 2x" alt="">
+                                </div>
+                            </div>
+                            <div class="download-block partner-app__download-block">
+                                <a href="#" class="download-block__link" data-client="Google Play">
+                                    <img src="img/icons/google-play.png" srcset="img/icons/google-play.png 1x, img/icons/google-play@2x.png 2x" alt="Google Play">
+                                </a>
+                                <a href="#" class="download-block__link" data-client="App Store">
+                                    <img src="img/icons/app-store.png" srcset="img/icons/app-store.png 1x, img/icons/app-store@2x.png 2x" alt="App Store">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="partner-app__decorative-star">
+                            <svg width="950" height=950" viewBox="0 0 950 950" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M435.561 0.809395L538.333 317.108L870.909 317.108L601.849 512.591L704.621 828.89L435.561 633.407L166.501 828.89L269.273 512.591L0.213348 317.108L332.789 317.108L435.561 0.809395Z" fill="#035A95"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="insights">
+            <div class="container">
+                <div class="insights__wrapper">
+                    <h2 class="title title_size-m fade-title insights__title">Snoring insights</h2>
+                    <div class="insights__grid">
+                        <article class="insights-item insights-item_lg" data-topic="How Can SnoreLab Help My Snoring?">
+                            <p class="insights-item__links">
+                                <a href="#" class="insights-item__link">Solutions</a>,
+                                <a href="#" class="insights-item__link">Using&nbsp;SnoreLab</a>
+                            </p>
+                            <h3 class="title insights-item__title">How Can SnoreLab Help My Snoring?</h3>
+                            <p class="insights-item_lg__text d-none d-md-block">There are many effective ways to reduce snoring from specialist products to exercises, but&nbsp;different approaches work for different people.</p>
+                        </article>
+                        <article class="insights-item" data-topic="20 Common Questions About Snoring Answered">
+                            <p class="insights-item__links">
+                                <a href="#" class="insights-item__link">Solutions</a>,
+                                <a href="#" class="insights-item__link">Using&nbsp;SnoreLab</a>
+                            </p>
+                            <h3 class="title insights-item__title">20 Common Questions About Snoring Answered</h3>
+                        </article>
+                        <article class="insights-item" data-topic="5 Easy Habits to Stop Snoring Naturally">
+                            <p class="insights-item__links">
+                                <a href="#" class="insights-item__link">Solutions</a>,
+                                <a href="#" class="insights-item__link">Diet&nbsp;&&nbsp;Lifestyle</a>
+                            </p>
+                            <h3 class="title insights-item__title">5 Easy Habits to Stop Snoring Naturally</h3>
+                        </article>
+                        <article class="insights-item d-none d-md-flex" data-topic="Mouth Exercises for Snoring">
+                            <p class="insights-item__links">
+                                <a href="#" class="insights-item__link">Solutions</a>,
+                                <a href="#" class="insights-item__link">Science</a>,
+                                <a href="#" class="insights-item__link">Diet&nbsp;&&nbsp;Lifestyle</a>
+                            </p>
+                            <h3 class="title insights-item__title">Mouth Exercises for Snoring</h3>
+                        </article>
+                        <article class="insights-item d-none d-md-flex" data-topic="What is Snoring? – An Introduction">
+                            <p class="insights-item__links">
+                                <a href="#" class="insights-item__link">Causes</a>,
+                                <a href="#" class="insights-item__link">Science</a>
+                            </p>
+                            <h3 class="title insights-item__title">What is Snoring? – An Introduction</h3>
+                        </article>
+                    </div>
+                    <a href="#" class="btn insights__read-more">Read more</a>
+                </div>
+            </div>
+        </section>
+	</main>
+    <!-- End main -->
+    <!-- Begin footer -->
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <a class="logo footer__logo"href="index.html">
+                            <svg width="172" height="47" viewBox="0 0 172 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24.6961 32.0455C24.5786 32.0455 24.4633 32.0113 24.3633 31.9467C24.2632 31.882 24.1823 31.7896 24.1296 31.6796L21.2358 25.6455L20.0743 28.0714C20.0216 28.1814 19.9407 28.2739 19.8407 28.3385C19.7406 28.4031 19.6254 28.4373 19.5078 28.4373H15.6098C15.4489 28.4396 15.2929 28.379 15.1722 28.2674C15.0516 28.1558 14.975 28.0012 14.9573 27.8337C14.9492 27.7417 14.9595 27.6488 14.9877 27.5612C15.0159 27.4736 15.0613 27.3931 15.121 27.3249C15.1806 27.2567 15.2532 27.2024 15.3342 27.1653C15.4151 27.1282 15.5025 27.1093 15.5908 27.1097H19.116L20.6693 23.8674C20.7219 23.757 20.8028 23.6642 20.9029 23.5993C21.0031 23.5344 21.1186 23.5 21.2364 23.5C21.3542 23.5 21.4696 23.5344 21.5698 23.5993C21.67 23.6642 21.7509 23.757 21.8034 23.8674L24.6967 29.9015L25.8582 27.4756C25.9108 27.3656 25.9917 27.2732 26.0916 27.2086C26.1916 27.144 26.3067 27.1097 26.4242 27.1097H30.3205C30.4815 27.1069 30.6377 27.1671 30.7587 27.2784C30.8796 27.3896 30.9566 27.5441 30.9747 27.7116C30.9827 27.8036 30.9723 27.8964 30.944 27.9839C30.9158 28.0715 30.8704 28.1519 30.8108 28.22C30.7511 28.2881 30.6785 28.3425 30.5977 28.3795C30.5168 28.4165 30.4294 28.4355 30.3411 28.4351H26.8175L25.2626 31.6796C25.2099 31.7896 25.129 31.882 25.029 31.9467C24.9289 32.0113 24.8137 32.0455 24.6961 32.0455Z" fill="white" stroke="white" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M32.1464 36.3182H13.7859C12.2073 36.3182 10.8288 35.4839 10.0978 34.0866C9.73927 33.417 9.57438 32.661 9.62154 31.9032C9.6687 31.1453 9.92605 30.4155 10.3648 29.7954L18.8112 17.6112V13.2423C18.3001 13.1037 17.8494 12.7999 17.5295 12.3785C17.2097 11.957 17.0388 11.4416 17.0435 10.9129C17.0559 9.59588 18.1591 8.54546 19.4783 8.54546H26.4534C27.7726 8.54546 28.8764 9.59331 28.8882 10.9129C28.893 11.4416 28.722 11.957 28.4022 12.3785C28.0824 12.7999 27.6316 13.1037 27.1205 13.2423V17.6112L35.5669 29.7954C36.0056 30.4155 36.263 31.1453 36.3103 31.9031C36.3575 32.6609 36.1928 33.4169 35.8345 34.0866C35.1034 35.4839 33.7244 36.3182 32.1464 36.3182ZM19.3613 9.78425C19.1885 9.78439 19.0179 9.82295 18.8619 9.89713C18.7059 9.97131 18.5684 10.0792 18.4594 10.2131C18.3504 10.347 18.2726 10.5034 18.2317 10.671C18.1908 10.8386 18.1879 11.0132 18.223 11.1821C18.3318 11.7235 18.8251 12.1028 19.3783 12.1028H19.5546C19.6856 12.1028 19.8112 12.1547 19.9038 12.2472C19.9965 12.3397 20.0485 12.4651 20.0485 12.5958V18.0116L11.4134 30.4665C10.7767 31.3846 10.6891 32.5884 11.2257 33.5683C11.4738 34.0304 11.8439 34.4157 12.2959 34.6826C12.7479 34.9494 13.2644 35.0875 13.7895 35.082H32.0876C33.212 35.082 34.2595 34.4644 34.7601 33.4603C34.997 32.9949 35.1022 32.4737 35.0643 31.9531C35.0264 31.4324 34.8469 30.9319 34.5451 30.5056L25.8817 18.0116V12.5958C25.8817 12.4651 25.9337 12.3397 26.0263 12.2472C26.119 12.1547 26.2446 12.1028 26.3756 12.1028H26.489C27.0421 12.1028 27.5355 11.7235 27.6443 11.1821C27.6794 11.0132 27.6764 10.8387 27.6356 10.6711C27.5947 10.5035 27.517 10.3471 27.4081 10.2133C27.2991 10.0795 27.1617 9.97151 27.0057 9.89729C26.8498 9.82308 26.6793 9.78446 26.5065 9.78425H19.3613Z" fill="white" stroke="white" stroke-width="0.5" stroke-miterlimit="10"/>
+                                <path d="M16.6643 2.1325C16.485 1.57191 15.8841 1.26051 15.3322 1.46508C12.1703 2.63713 9.29344 4.47761 6.90054 6.86546C4.25586 9.50456 2.27855 12.7362 1.13262 16.2923C-0.013304 19.8485 -0.294814 23.6266 0.311444 27.3133C0.917703 30.9999 2.39425 34.4889 4.61862 37.4908C6.84298 40.4927 9.75104 42.921 13.1016 44.5742C16.4521 46.2274 20.1485 47.0579 23.8842 46.9969C27.6199 46.9358 31.2872 45.9848 34.5819 44.223C37.5629 42.6288 40.1612 40.4124 42.2029 37.7285C42.5593 37.2601 42.4363 36.5946 41.9522 36.2599C41.4681 35.9251 40.8063 36.048 40.4478 36.5148C38.6003 38.9207 36.2589 40.9091 33.5768 42.3434C30.5809 43.9455 27.2463 44.8101 23.8494 44.8657C20.4525 44.9212 17.0913 44.1661 14.0447 42.6628C10.9981 41.1595 8.35377 38.9515 6.33116 36.2219C4.30854 33.4922 2.96592 30.3197 2.41465 26.9674C1.86337 23.6151 2.11935 20.1797 3.16134 16.9461C4.20333 13.7125 6.0013 10.7739 8.40611 8.37421C10.5591 6.22576 13.1429 4.56462 15.9825 3.49746C16.5334 3.29039 16.8436 2.6931 16.6643 2.1325Z" fill="white"/>
+                                <path d="M56.372 32.836C53.1613 32.836 50.632 31.8467 48.784 29.868L50.604 27.348C52.2093 29.0653 54.1787 29.924 56.512 29.924C57.7627 29.924 58.696 29.672 59.312 29.168C59.9467 28.664 60.264 28.0667 60.264 27.376C60.264 26.6667 59.8907 26.1067 59.144 25.696C58.3973 25.2667 57.492 24.9307 56.428 24.688C55.364 24.4453 54.2907 24.156 53.208 23.82C52.144 23.484 51.2387 22.9147 50.492 22.112C49.7453 21.3093 49.372 20.2733 49.372 19.004C49.372 17.436 49.9973 16.1387 51.248 15.112C52.5173 14.0667 54.16 13.544 56.176 13.544C59.0507 13.544 61.384 14.412 63.176 16.148L61.3 18.584C59.8813 17.1653 58.08 16.456 55.896 16.456C54.9253 16.456 54.1507 16.6707 53.572 17.1C53.012 17.5107 52.732 18.0707 52.732 18.78C52.732 19.2467 52.928 19.6387 53.32 19.956C53.7307 20.2733 54.2533 20.5347 54.888 20.74C55.5227 20.9267 56.2227 21.1133 56.988 21.3C57.772 21.4867 58.5467 21.72 59.312 22C60.096 22.2613 60.8053 22.588 61.44 22.98C62.0747 23.372 62.588 23.9133 62.98 24.604C63.3907 25.2947 63.596 26.116 63.596 27.068C63.596 28.748 62.9893 30.1293 61.776 31.212C60.5627 32.2947 58.7613 32.836 56.372 32.836ZM79.157 32.5H76.217V24.044C76.217 22.1773 75.3117 21.244 73.501 21.244C72.7917 21.244 72.129 21.4213 71.513 21.776C70.897 22.1307 70.4023 22.56 70.029 23.064V32.5H67.089V18.976H70.029V20.824C70.533 20.2267 71.205 19.7133 72.045 19.284C72.885 18.8547 73.7997 18.64 74.789 18.64C76.2263 18.64 77.309 19.0133 78.037 19.76C78.7837 20.5067 79.157 21.58 79.157 22.98V32.5ZM89.6397 32.836C87.5491 32.836 85.8691 32.1547 84.5997 30.792C83.3304 29.4107 82.6957 27.7213 82.6957 25.724C82.6957 23.7267 83.3304 22.0467 84.5997 20.684C85.8691 19.3213 87.5491 18.64 89.6397 18.64C91.7491 18.64 93.4384 19.3213 94.7077 20.684C95.9771 22.0467 96.6117 23.7267 96.6117 25.724C96.6117 27.74 95.9771 29.4293 94.7077 30.792C93.4384 32.1547 91.7491 32.836 89.6397 32.836ZM89.6397 30.232C90.8531 30.232 91.8051 29.8027 92.4957 28.944C93.2051 28.0667 93.5597 26.9933 93.5597 25.724C93.5597 24.4733 93.2051 23.4187 92.4957 22.56C91.8051 21.6827 90.8531 21.244 89.6397 21.244C88.4451 21.244 87.4931 21.6827 86.7837 22.56C86.0931 23.4187 85.7477 24.4733 85.7477 25.724C85.7477 26.9933 86.0931 28.0667 86.7837 28.944C87.4931 29.8027 88.4451 30.232 89.6397 30.232ZM103.087 32.5H100.147V18.976H103.087V20.964C103.609 20.292 104.263 19.7413 105.047 19.312C105.831 18.8827 106.643 18.668 107.483 18.668V21.58C107.221 21.524 106.913 21.496 106.559 21.496C105.943 21.496 105.28 21.6827 104.571 22.056C103.88 22.4107 103.385 22.8213 103.087 23.288V32.5ZM116.658 32.836C114.604 32.836 112.906 32.1827 111.562 30.876C110.236 29.5507 109.574 27.8333 109.574 25.724C109.574 23.7453 110.218 22.0747 111.506 20.712C112.812 19.3307 114.455 18.64 116.434 18.64C118.431 18.64 120.036 19.3307 121.25 20.712C122.482 22.0933 123.098 23.8573 123.098 26.004V26.704H112.654C112.766 27.768 113.204 28.6547 113.97 29.364C114.735 30.0733 115.734 30.428 116.966 30.428C117.656 30.428 118.347 30.2973 119.038 30.036C119.747 29.7747 120.335 29.4107 120.802 28.944L122.146 30.876C120.783 32.1827 118.954 32.836 116.658 32.836ZM120.242 24.632C120.204 23.6987 119.859 22.868 119.206 22.14C118.571 21.412 117.647 21.048 116.434 21.048C115.276 21.048 114.371 21.412 113.718 22.14C113.064 22.8493 112.7 23.68 112.626 24.632H120.242ZM138.151 32.5H126.643V13.824H129.919V29.616H138.151V32.5ZM152.511 32.5H149.571V31.044C148.526 32.2387 147.07 32.836 145.203 32.836C143.971 32.836 142.879 32.444 141.927 31.66C140.975 30.8573 140.499 29.756 140.499 28.356C140.499 26.9187 140.966 25.8267 141.899 25.08C142.851 24.3333 143.952 23.96 145.203 23.96C147.126 23.96 148.582 24.5387 149.571 25.696V23.68C149.571 22.896 149.282 22.28 148.703 21.832C148.124 21.384 147.359 21.16 146.407 21.16C144.895 21.16 143.56 21.7293 142.403 22.868L141.199 20.824C142.73 19.368 144.624 18.64 146.883 18.64C148.544 18.64 149.898 19.032 150.943 19.816C151.988 20.6 152.511 21.8413 152.511 23.54V32.5ZM146.351 30.82C147.826 30.82 148.899 30.3533 149.571 29.42V27.376C148.899 26.4427 147.826 25.976 146.351 25.976C145.511 25.976 144.82 26.2 144.279 26.648C143.738 27.096 143.467 27.684 143.467 28.412C143.467 29.14 143.738 29.728 144.279 30.176C144.82 30.6053 145.511 30.82 146.351 30.82ZM159.823 28.44C160.14 28.944 160.625 29.3733 161.279 29.728C161.951 30.064 162.623 30.232 163.295 30.232C164.452 30.232 165.376 29.8213 166.067 29C166.776 28.16 167.131 27.0773 167.131 25.752C167.131 24.4267 166.776 23.344 166.067 22.504C165.376 21.664 164.452 21.244 163.295 21.244C162.623 21.244 161.96 21.4213 161.307 21.776C160.653 22.1307 160.159 22.5693 159.823 23.092V28.44ZM159.823 32.5H156.883V13.824H159.823V20.852C160.924 19.3773 162.371 18.64 164.163 18.64C165.917 18.64 167.355 19.2933 168.475 20.6C169.595 21.888 170.155 23.6053 170.155 25.752C170.155 27.936 169.595 29.6627 168.475 30.932C167.355 32.2013 165.917 32.836 164.163 32.836C162.389 32.836 160.943 32.108 159.823 30.652V32.5Z" fill="white"/>
+                            </svg> 
+                        </a>
+                        <p class="footer__note">The Snoring Management App for iOS and Android</p>
+                        <div class="footer__social d-none d-md-flex">
+                            <a href="#" class="footer__social-icon">
+                                <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.7887 28C8.55374 28 5.53817 27.0591 3 25.4356C5.15499 25.5751 8.95807 25.2411 11.3236 22.9848C7.76508 22.8215 6.16026 20.0923 5.95094 18.926C6.25329 19.0426 7.6953 19.1826 8.50934 18.856C4.4159 17.8296 3.78793 14.2373 3.92748 13.141C4.695 13.6775 5.99745 13.8641 6.50913 13.8174C2.69479 11.0882 4.06703 6.98276 4.74151 6.09635C7.47882 9.88867 11.5812 12.0186 16.6564 12.137C16.5607 11.7174 16.5102 11.2804 16.5102 10.8316C16.5102 7.61092 19.1134 5 22.3247 5C24.0025 5 25.5144 5.71275 26.5757 6.85284C27.6969 6.59011 29.3843 5.97507 30.2092 5.4432C29.7934 6.93611 28.4989 8.18149 27.7159 8.64308C27.7224 8.65878 27.7095 8.62731 27.7159 8.64308C28.4037 8.53904 30.2648 8.18137 31 7.68256C30.6364 8.52125 29.264 9.91573 28.1377 10.6964C28.3473 19.9381 21.2765 28 11.7887 28Z" fill="#1DA1F2"/>
+                                </svg>                                 
+                            </a>
+                            <a href="#" class="footer__social-icon">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="15" cy="15" r="13.125" fill="url(#paint0_linear)"/>
+                                    <path d="M19.8879 19.014L20.4709 15.3095H16.8236V12.9066C16.8236 11.8928 17.3322 10.9041 18.9658 10.9041H20.625V7.7503C20.625 7.7503 19.1199 7.5 17.6815 7.5C14.6764 7.5 12.7141 9.27463 12.7141 12.486V15.3095H9.375V19.014H12.7141V27.9698C13.3844 28.0725 14.0702 28.125 14.7688 28.125C15.4675 28.125 16.1533 28.0725 16.8236 27.9698V19.014H19.8879Z" fill="white"/>
+                                    <defs>
+                                    <linearGradient id="paint0_linear" x1="15" y1="1.875" x2="15" y2="28.0471" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#18ACFE"/>
+                                    <stop offset="1" stop-color="#0163E0"/>
+                                    </linearGradient>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-2">
+                        <h4 class="title footer-list__title">Support</h4>
+                        <ul class="footer-list">
+                            <li class="footer-list__item">
+                                <a href="#" class="underline-link footer-list__link">Contact us</a>
+                            </li>
+                            <li class="footer-list__item">
+                                <a href="#" class="underline-link footer-list__link">FAQ</a>
+                            </li>
+                            <li class="footer-list__item">
+                                <a href="#" class="underline-link footer-list__link">Privacy Policy</a>
+                            </li>
+                            <li class="footer-list__item">
+                                <a href="#" class="underline-link footer-list__link">Terms of Use</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <h4 class="title footer-list__title">Company</h4>
+                        <ul class="footer-list">
+                            <li class="footer-list__item">
+                                <a href="#" class="underline-link footer-list__link">About</a>
+                            </li>
+                            <li class="footer-list__item">
+                                <a href="#" class="underline-link footer-list__link">Careers</a>
+                            </li>
+                            <li class="footer-list__item">
+                                <a href="#" class="underline-link footer-list__link">Press</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="download-block footer__download">
+                            <a href="#" class="download-block__link" data-client="Google Play">
+                                <img src="img/icons/google-play.png" srcset="img/icons/google-play.png 1x, img/icons/google-play@2x.png 2x" alt="Google Play">
+                            </a>
+                            <a href="#" class="download-block__link" data-client="App Store">
+                                <img src="img/icons/app-store.png" srcset="img/icons/app-store.png 1x, img/icons/app-store@2x.png 2x" alt="App Store">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 d-block d-md-none">
+                        <div class="footer__social">
+                            <a href="#" class="footer__social-icon">
+                                <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.7887 28C8.55374 28 5.53817 27.0591 3 25.4356C5.15499 25.5751 8.95807 25.2411 11.3236 22.9848C7.76508 22.8215 6.16026 20.0923 5.95094 18.926C6.25329 19.0426 7.6953 19.1826 8.50934 18.856C4.4159 17.8296 3.78793 14.2373 3.92748 13.141C4.695 13.6775 5.99745 13.8641 6.50913 13.8174C2.69479 11.0882 4.06703 6.98276 4.74151 6.09635C7.47882 9.88867 11.5812 12.0186 16.6564 12.137C16.5607 11.7174 16.5102 11.2804 16.5102 10.8316C16.5102 7.61092 19.1134 5 22.3247 5C24.0025 5 25.5144 5.71275 26.5757 6.85284C27.6969 6.59011 29.3843 5.97507 30.2092 5.4432C29.7934 6.93611 28.4989 8.18149 27.7159 8.64308C27.7224 8.65878 27.7095 8.62731 27.7159 8.64308C28.4037 8.53904 30.2648 8.18137 31 7.68256C30.6364 8.52125 29.264 9.91573 28.1377 10.6964C28.3473 19.9381 21.2765 28 11.7887 28Z" fill="#1DA1F2"/>
+                                </svg>                                 
+                            </a>
+                            <a href="#" class="footer__social-icon">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="15" cy="15" r="13.125" fill="url(#paint0_linear)"/>
+                                    <path d="M19.8879 19.014L20.4709 15.3095H16.8236V12.9066C16.8236 11.8928 17.3322 10.9041 18.9658 10.9041H20.625V7.7503C20.625 7.7503 19.1199 7.5 17.6815 7.5C14.6764 7.5 12.7141 9.27463 12.7141 12.486V15.3095H9.375V19.014H12.7141V27.9698C13.3844 28.0725 14.0702 28.125 14.7688 28.125C15.4675 28.125 16.1533 28.0725 16.8236 27.9698V19.014H19.8879Z" fill="white"/>
+                                    <defs>
+                                    <linearGradient id="paint0_linear" x1="15" y1="1.875" x2="15" y2="28.0471" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#18ACFE"/>
+                                    <stop offset="1" stop-color="#0163E0"/>
+                                    </linearGradient>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <p class="footer__rights">© 2021 SnoreLab. All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+    <!-- Begin m-menu -->
+    <div class="m-menu m-menu_hidden">
+        <header class="header m-menu__header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8">
+                        <div class="header-logo m-menu__logo">
+                            <a class="header-logo__link m-menu__logo-link" href="index.html">
+                                <svg width="172" height="47" viewBox="0 0 172 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M24.6961 32.0455C24.5786 32.0455 24.4633 32.0113 24.3633 31.9467C24.2632 31.882 24.1823 31.7896 24.1296 31.6796L21.2358 25.6455L20.0743 28.0714C20.0216 28.1814 19.9407 28.2739 19.8407 28.3385C19.7406 28.4031 19.6254 28.4373 19.5078 28.4373H15.6098C15.4489 28.4396 15.2929 28.379 15.1722 28.2674C15.0516 28.1558 14.975 28.0012 14.9573 27.8337C14.9492 27.7417 14.9595 27.6488 14.9877 27.5612C15.0159 27.4736 15.0613 27.3931 15.121 27.3249C15.1806 27.2567 15.2532 27.2024 15.3342 27.1653C15.4151 27.1282 15.5025 27.1093 15.5908 27.1097H19.116L20.6693 23.8674C20.7219 23.757 20.8028 23.6642 20.9029 23.5993C21.0031 23.5344 21.1186 23.5 21.2364 23.5C21.3542 23.5 21.4696 23.5344 21.5698 23.5993C21.67 23.6642 21.7509 23.757 21.8034 23.8674L24.6967 29.9015L25.8582 27.4756C25.9108 27.3656 25.9917 27.2732 26.0916 27.2086C26.1916 27.144 26.3067 27.1097 26.4242 27.1097H30.3205C30.4815 27.1069 30.6377 27.1671 30.7587 27.2784C30.8796 27.3896 30.9566 27.5441 30.9747 27.7116C30.9827 27.8036 30.9723 27.8964 30.944 27.9839C30.9158 28.0715 30.8704 28.1519 30.8108 28.22C30.7511 28.2881 30.6785 28.3425 30.5977 28.3795C30.5168 28.4165 30.4294 28.4355 30.3411 28.4351H26.8175L25.2626 31.6796C25.2099 31.7896 25.129 31.882 25.029 31.9467C24.9289 32.0113 24.8137 32.0455 24.6961 32.0455Z" fill="white" stroke="white" stroke-width="0.5" stroke-miterlimit="10"></path>
+                                    <path d="M32.1464 36.3182H13.7859C12.2073 36.3182 10.8288 35.4839 10.0978 34.0866C9.73927 33.417 9.57438 32.661 9.62154 31.9032C9.6687 31.1453 9.92605 30.4155 10.3648 29.7954L18.8112 17.6112V13.2423C18.3001 13.1037 17.8494 12.7999 17.5295 12.3785C17.2097 11.957 17.0388 11.4416 17.0435 10.9129C17.0559 9.59588 18.1591 8.54546 19.4783 8.54546H26.4534C27.7726 8.54546 28.8764 9.59331 28.8882 10.9129C28.893 11.4416 28.722 11.957 28.4022 12.3785C28.0824 12.7999 27.6316 13.1037 27.1205 13.2423V17.6112L35.5669 29.7954C36.0056 30.4155 36.263 31.1453 36.3103 31.9031C36.3575 32.6609 36.1928 33.4169 35.8345 34.0866C35.1034 35.4839 33.7244 36.3182 32.1464 36.3182ZM19.3613 9.78425C19.1885 9.78439 19.0179 9.82295 18.8619 9.89713C18.7059 9.97131 18.5684 10.0792 18.4594 10.2131C18.3504 10.347 18.2726 10.5034 18.2317 10.671C18.1908 10.8386 18.1879 11.0132 18.223 11.1821C18.3318 11.7235 18.8251 12.1028 19.3783 12.1028H19.5546C19.6856 12.1028 19.8112 12.1547 19.9038 12.2472C19.9965 12.3397 20.0485 12.4651 20.0485 12.5958V18.0116L11.4134 30.4665C10.7767 31.3846 10.6891 32.5884 11.2257 33.5683C11.4738 34.0304 11.8439 34.4157 12.2959 34.6826C12.7479 34.9494 13.2644 35.0875 13.7895 35.082H32.0876C33.212 35.082 34.2595 34.4644 34.7601 33.4603C34.997 32.9949 35.1022 32.4737 35.0643 31.9531C35.0264 31.4324 34.8469 30.9319 34.5451 30.5056L25.8817 18.0116V12.5958C25.8817 12.4651 25.9337 12.3397 26.0263 12.2472C26.119 12.1547 26.2446 12.1028 26.3756 12.1028H26.489C27.0421 12.1028 27.5355 11.7235 27.6443 11.1821C27.6794 11.0132 27.6764 10.8387 27.6356 10.6711C27.5947 10.5035 27.517 10.3471 27.4081 10.2133C27.2991 10.0795 27.1617 9.97151 27.0057 9.89729C26.8498 9.82308 26.6793 9.78446 26.5065 9.78425H19.3613Z" fill="white" stroke="white" stroke-width="0.5" stroke-miterlimit="10"></path>
+                                    <path d="M16.6643 2.1325C16.485 1.57191 15.8841 1.26051 15.3322 1.46508C12.1703 2.63713 9.29344 4.47761 6.90054 6.86546C4.25586 9.50456 2.27855 12.7362 1.13262 16.2923C-0.013304 19.8485 -0.294814 23.6266 0.311444 27.3133C0.917703 30.9999 2.39425 34.4889 4.61862 37.4908C6.84298 40.4927 9.75104 42.921 13.1016 44.5742C16.4521 46.2274 20.1485 47.0579 23.8842 46.9969C27.6199 46.9358 31.2872 45.9848 34.5819 44.223C37.5629 42.6288 40.1612 40.4124 42.2029 37.7285C42.5593 37.2601 42.4363 36.5946 41.9522 36.2599C41.4681 35.9251 40.8063 36.048 40.4478 36.5148C38.6003 38.9207 36.2589 40.9091 33.5768 42.3434C30.5809 43.9455 27.2463 44.8101 23.8494 44.8657C20.4525 44.9212 17.0913 44.1661 14.0447 42.6628C10.9981 41.1595 8.35377 38.9515 6.33116 36.2219C4.30854 33.4922 2.96592 30.3197 2.41465 26.9674C1.86337 23.6151 2.11935 20.1797 3.16134 16.9461C4.20333 13.7125 6.0013 10.7739 8.40611 8.37421C10.5591 6.22576 13.1429 4.56462 15.9825 3.49746C16.5334 3.29039 16.8436 2.6931 16.6643 2.1325Z" fill="white"></path>
+                                    <path d="M56.372 32.836C53.1613 32.836 50.632 31.8467 48.784 29.868L50.604 27.348C52.2093 29.0653 54.1787 29.924 56.512 29.924C57.7627 29.924 58.696 29.672 59.312 29.168C59.9467 28.664 60.264 28.0667 60.264 27.376C60.264 26.6667 59.8907 26.1067 59.144 25.696C58.3973 25.2667 57.492 24.9307 56.428 24.688C55.364 24.4453 54.2907 24.156 53.208 23.82C52.144 23.484 51.2387 22.9147 50.492 22.112C49.7453 21.3093 49.372 20.2733 49.372 19.004C49.372 17.436 49.9973 16.1387 51.248 15.112C52.5173 14.0667 54.16 13.544 56.176 13.544C59.0507 13.544 61.384 14.412 63.176 16.148L61.3 18.584C59.8813 17.1653 58.08 16.456 55.896 16.456C54.9253 16.456 54.1507 16.6707 53.572 17.1C53.012 17.5107 52.732 18.0707 52.732 18.78C52.732 19.2467 52.928 19.6387 53.32 19.956C53.7307 20.2733 54.2533 20.5347 54.888 20.74C55.5227 20.9267 56.2227 21.1133 56.988 21.3C57.772 21.4867 58.5467 21.72 59.312 22C60.096 22.2613 60.8053 22.588 61.44 22.98C62.0747 23.372 62.588 23.9133 62.98 24.604C63.3907 25.2947 63.596 26.116 63.596 27.068C63.596 28.748 62.9893 30.1293 61.776 31.212C60.5627 32.2947 58.7613 32.836 56.372 32.836ZM79.157 32.5H76.217V24.044C76.217 22.1773 75.3117 21.244 73.501 21.244C72.7917 21.244 72.129 21.4213 71.513 21.776C70.897 22.1307 70.4023 22.56 70.029 23.064V32.5H67.089V18.976H70.029V20.824C70.533 20.2267 71.205 19.7133 72.045 19.284C72.885 18.8547 73.7997 18.64 74.789 18.64C76.2263 18.64 77.309 19.0133 78.037 19.76C78.7837 20.5067 79.157 21.58 79.157 22.98V32.5ZM89.6397 32.836C87.5491 32.836 85.8691 32.1547 84.5997 30.792C83.3304 29.4107 82.6957 27.7213 82.6957 25.724C82.6957 23.7267 83.3304 22.0467 84.5997 20.684C85.8691 19.3213 87.5491 18.64 89.6397 18.64C91.7491 18.64 93.4384 19.3213 94.7077 20.684C95.9771 22.0467 96.6117 23.7267 96.6117 25.724C96.6117 27.74 95.9771 29.4293 94.7077 30.792C93.4384 32.1547 91.7491 32.836 89.6397 32.836ZM89.6397 30.232C90.8531 30.232 91.8051 29.8027 92.4957 28.944C93.2051 28.0667 93.5597 26.9933 93.5597 25.724C93.5597 24.4733 93.2051 23.4187 92.4957 22.56C91.8051 21.6827 90.8531 21.244 89.6397 21.244C88.4451 21.244 87.4931 21.6827 86.7837 22.56C86.0931 23.4187 85.7477 24.4733 85.7477 25.724C85.7477 26.9933 86.0931 28.0667 86.7837 28.944C87.4931 29.8027 88.4451 30.232 89.6397 30.232ZM103.087 32.5H100.147V18.976H103.087V20.964C103.609 20.292 104.263 19.7413 105.047 19.312C105.831 18.8827 106.643 18.668 107.483 18.668V21.58C107.221 21.524 106.913 21.496 106.559 21.496C105.943 21.496 105.28 21.6827 104.571 22.056C103.88 22.4107 103.385 22.8213 103.087 23.288V32.5ZM116.658 32.836C114.604 32.836 112.906 32.1827 111.562 30.876C110.236 29.5507 109.574 27.8333 109.574 25.724C109.574 23.7453 110.218 22.0747 111.506 20.712C112.812 19.3307 114.455 18.64 116.434 18.64C118.431 18.64 120.036 19.3307 121.25 20.712C122.482 22.0933 123.098 23.8573 123.098 26.004V26.704H112.654C112.766 27.768 113.204 28.6547 113.97 29.364C114.735 30.0733 115.734 30.428 116.966 30.428C117.656 30.428 118.347 30.2973 119.038 30.036C119.747 29.7747 120.335 29.4107 120.802 28.944L122.146 30.876C120.783 32.1827 118.954 32.836 116.658 32.836ZM120.242 24.632C120.204 23.6987 119.859 22.868 119.206 22.14C118.571 21.412 117.647 21.048 116.434 21.048C115.276 21.048 114.371 21.412 113.718 22.14C113.064 22.8493 112.7 23.68 112.626 24.632H120.242ZM138.151 32.5H126.643V13.824H129.919V29.616H138.151V32.5ZM152.511 32.5H149.571V31.044C148.526 32.2387 147.07 32.836 145.203 32.836C143.971 32.836 142.879 32.444 141.927 31.66C140.975 30.8573 140.499 29.756 140.499 28.356C140.499 26.9187 140.966 25.8267 141.899 25.08C142.851 24.3333 143.952 23.96 145.203 23.96C147.126 23.96 148.582 24.5387 149.571 25.696V23.68C149.571 22.896 149.282 22.28 148.703 21.832C148.124 21.384 147.359 21.16 146.407 21.16C144.895 21.16 143.56 21.7293 142.403 22.868L141.199 20.824C142.73 19.368 144.624 18.64 146.883 18.64C148.544 18.64 149.898 19.032 150.943 19.816C151.988 20.6 152.511 21.8413 152.511 23.54V32.5ZM146.351 30.82C147.826 30.82 148.899 30.3533 149.571 29.42V27.376C148.899 26.4427 147.826 25.976 146.351 25.976C145.511 25.976 144.82 26.2 144.279 26.648C143.738 27.096 143.467 27.684 143.467 28.412C143.467 29.14 143.738 29.728 144.279 30.176C144.82 30.6053 145.511 30.82 146.351 30.82ZM159.823 28.44C160.14 28.944 160.625 29.3733 161.279 29.728C161.951 30.064 162.623 30.232 163.295 30.232C164.452 30.232 165.376 29.8213 166.067 29C166.776 28.16 167.131 27.0773 167.131 25.752C167.131 24.4267 166.776 23.344 166.067 22.504C165.376 21.664 164.452 21.244 163.295 21.244C162.623 21.244 161.96 21.4213 161.307 21.776C160.653 22.1307 160.159 22.5693 159.823 23.092V28.44ZM159.823 32.5H156.883V13.824H159.823V20.852C160.924 19.3773 162.371 18.64 164.163 18.64C165.917 18.64 167.355 19.2933 168.475 20.6C169.595 21.888 170.155 23.6053 170.155 25.752C170.155 27.936 169.595 29.6627 168.475 30.932C167.355 32.2013 165.917 32.836 164.163 32.836C162.389 32.836 160.943 32.108 159.823 30.652V32.5Z" fill="white"></path>
+                                </svg>                                
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="m-menu__close">
+                            <button class="m-menu__close-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.22499 4.811C6.03639 4.62884 5.78378 4.52805 5.52159 4.53033C5.25939 4.5326 5.00858 4.63777 4.82317 4.82318C4.63776 5.00859 4.53259 5.2594 4.53031 5.5216C4.52804 5.7838 4.62883 6.0364 4.81099 6.225L10.586 12L4.80999 17.775C4.71448 17.8672 4.6383 17.9776 4.58589 18.0996C4.53348 18.2216 4.50589 18.3528 4.50474 18.4856C4.50358 18.6184 4.52889 18.7501 4.57917 18.873C4.62945 18.9959 4.7037 19.1075 4.79759 19.2014C4.89149 19.2953 5.00314 19.3695 5.12603 19.4198C5.24893 19.4701 5.38061 19.4954 5.51339 19.4943C5.64617 19.4931 5.77739 19.4655 5.89939 19.4131C6.0214 19.3607 6.13174 19.2845 6.22399 19.189L12 13.414L17.775 19.189C17.9636 19.3712 18.2162 19.472 18.4784 19.4697C18.7406 19.4674 18.9914 19.3622 19.1768 19.1768C19.3622 18.9914 19.4674 18.7406 19.4697 18.4784C19.4719 18.2162 19.3711 17.9636 19.189 17.775L13.414 12L19.189 6.225C19.3711 6.0364 19.4719 5.7838 19.4697 5.5216C19.4674 5.2594 19.3622 5.00859 19.1768 4.82318C18.9914 4.63777 18.7406 4.5326 18.4784 4.53033C18.2162 4.52805 17.9636 4.62884 17.775 4.811L12 10.586L6.22499 4.81V4.811Z" fill="white"/>
+                                </svg> 
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="m-menu__grid">
+            <div class="container">
+                <nav class="m-menu__nav">
+                    <ul class="m-menu__list">
+                        <li class="m-menu__item">
+                            <a href="#" class="m-menu__link">How SnoreLab Works</a>
+                        </li>
+                        <li class="m-menu__item">
+                            <a href="#" class="m-menu__link">Insights</a>
+                        </li>
+                        <li class="m-menu__item">
+                            <a href="#" class="m-menu__link">Remedy Shop</a>
+                        </li>
+                        <li class="m-menu__item">
+                            <a href="#" class="m-menu__link">FAQ</a>
+                        </li>
+                        <li class="m-menu__item">
+                            <a href="#" class="m-menu__link">Reviews</a>
+                        </li>
+                        <li class="m-menu__item">
+                            <a href="#" class="m-menu__link">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- End m-menu -->
+    <!-- Begin modal -->
+    <div class="modal"></div>
+    <!-- End modal -->
+    <!-- BEGIN scripts -->
+    <script src="js/application.js"></script>
+    <!-- END scripts -->
+</body>
+
+</html>

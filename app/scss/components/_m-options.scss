@@ -1,0 +1,16 @@
+.m-options {
+  @include flex(row, center, flex-end);
+  position: relative;
+  z-index: 3;
+  &__menu {
+    &-btn {
+      position: fixed;
+      top: 32px;
+      right: 32px;
+      width: 30px;
+      height: 30px;
+      background: icon('icon-menu-open.svg') no-repeat right 50% / 30px auto;
+      z-index: 10;
+    }
+  }
+}
